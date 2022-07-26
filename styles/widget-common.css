@@ -214,7 +214,11 @@ livelike-option:not([image]) div:first-child {
 }
 
 livelike-percentage {
-  transform: translateX(24%);
+  transform: translateX(20%);
+}
+
+livelike-option:not([image]) div:first-child livelike-percentage  {
+  left: 25%;
 }
 
 .widget-caption {
