@@ -212,8 +212,9 @@ livelike-footer {
 livelike-option:not([image]) div:first-child {
   width: 80% !important;
 }
+
 livelike-percentage {
-  transform: translateX(70px);
+  transform: translateX(24%);
 }
 
 .widget-caption {

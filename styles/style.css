@@ -214,3 +214,11 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
   border: 3px solid #A7B1B7 !important;
   color: #e50595 !important;
 }
+livelike-image-number-prediction livelike-option[image] {
+      flex-direction: row;
+}
+
+livelike-progress,
+livelike-percentage{
+  visibility: visible !important;
+}
