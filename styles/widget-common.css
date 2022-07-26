@@ -1,0 +1,225 @@
+livelike-widget-root {
+  background-color: #f3f4f5;
+  border-radius: 10px;
+}
+
+livelike-widget-header, 
+livelike-widget-body {
+  background: #F3F4F5;
+}
+
+livelike-title {
+  color: #0d2b56;
+  padding: 2px 14px;
+  font-size: 21px;
+  font-family: "proxima-nova";
+  line-height: 21px;
+  font-weight: 700;
+}
+
+livelike-image {
+  height: 60px;
+  width: 60px;
+}
+
+livelike-image img {
+  height: 58px;
+  width: 58px;
+  border-radius: 5px 0 0 5px;
+  z-index: 0;
+  transform: translateX(-1px);
+}
+
+livelike-option {
+  border-radius: 5px !important;
+  height: 60px;
+  margin: 10px;
+}
+
+livelike-widget-root {
+  padding-bottom: 10px;
+}
+
+livelike-description {
+  color: #0d2b56;
+  /* margin-top:12px */
+}
+
+livelike-percentage {
+  color: #0d2b56;
+}
+
+livelike-progress {
+  bottom: 14px;
+  left: 14px;
+  height: 4px;
+  border-radius: unset;
+  top: unset !important;
+  margin-top: unset !important;
+  background: #0d2b56;
+}
+livelike-progress[image] {
+  height: 4px !important;
+}
+livelike-widget-root livelike-widget-body livelike-select livelike-option {
+  background: white !important;
+  background-color: white !important;
+}
+
+livelike-option .livelike-voting-image-container {
+  min-height: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+livelike-description {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px 0 0 13px;
+}
+
+livelike-option .livelike-voting-image-container .image-description-wrapper {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  height: 100%;
+  width: calc(80% - 14px);
+  position: relative;
+}
+livelike-option
+  .livelike-voting-image-container
+  .image-description-wrapper
+  livelike-description {
+    padding: 15px 0 0 13px;
+}
+
+livelike-option[image] {
+  flex-direction: row-reverse;
+  font-weight: 500;
+  line-height: 15px;
+  font-size: 12px;
+  padding: 0px;
+}
+livelike-option:not([image]){
+  padding: 0 !important;
+}
+livelike-option:not([image]) div:first-child{
+  height: 100% !important;
+}
+livelike-option:not([image]) livelike-percentage {
+  align-self: center;
+}
+livelike-option:not([image]) livelike-description {
+  padding: 10px 0 0 14px !important;
+}
+
+livelike-percentage {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0 14px 0 0 !important;
+}
+/* Correct / Incorrect / Selected*/
+livelike-description[selected],
+livelike-description[selected][incorrect],
+livelike-percentage[selected],
+livelike-percentage[selected][incorrect] {
+  color: #bd3039;
+}
+
+livelike-percentage[correct] {
+  color: #00fa64;
+}
+
+livelike-option[selected] {
+  border-color: #bd3039;
+}
+
+livelike-option[selected][correct] {
+  border-color: #00fa64;
+}
+
+livelike-description[correct] {
+  color: #00fa64;
+}
+
+livelike-option[selected][incorrect] {
+  border-color: #bd3039;
+}
+
+livelike-progress[selected],
+livelike-progress[selected][incorrect] {
+  background: #bd3039;
+}
+livelike-progress[correct] {
+  background: #00fa64;
+}
+livelike-option[correct] {
+  border-color: #00fa64;
+}
+
+/*  Vote Button Footer */
+
+livelike-footer {
+  background-color: #F3F4F5 !important;
+  margin: 0 0 6px 14px;
+}
+
+.vote-button {
+  background: transparent !important;
+  border: 3px solid #0d2b56 !important;
+  color: #0d2b56 !important;
+  margin: 0 !important;
+  padding: 3px 30px !important;
+}
+
+.vote-button[disabled] {
+  border: 3px solid #A7B1B7 !important;
+  color: #A7B1B7 !important;
+}
+
+.voted-text {
+  font-family: "proxima-nova" !important;
+  color: #bd3040;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+
+.voted-text {
+  font-family: "proxima-nova" !important;
+  color: #bd3040;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+
+.predict-button {
+  background: transparent !important;
+  border: 3px solid #0d2b56 !important;
+  color: #0d2b56 !important;
+  margin: 0 !important;
+  padding: 3px 30px !important;
+}
+
+.predict-button[disabled] {
+  border: 3px solid #A7B1B7 !important;
+  color: #A7B1B7 !important;
+}
+
+
+/* Progress Spacing */
+
+livelike-option:not([image]) div:first-child {
+  width: 80% !important;
+}
+livelike-percentage {
+  transform: translateX(70px);
+}
+
+.widget-caption {
+  color : #0d2b56
+}
+
+.leaderboard-container {
+  padding: 12px;
+}
