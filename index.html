@@ -22,11 +22,17 @@
     <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
       <li class="nav-item" id="ama-nav-tab" role="presentation">
         <button class="nav-link active" id="ama-tab" data-bs-toggle="tab" data-bs-target="#ama" type="button"
-          role="tab" aria-controls="ama" aria-selected="true"><span>AMA</span><img class="dot hidden" src="./images/dot.svg"></img></button>
+          role="tab" aria-controls="ama" aria-selected="true"><span>Chat</span><img class="dot hidden" src="./images/dot.svg"></img></button>
       </li>
       <li class="nav-item" id="timeline-nav-tab" role="presentation">
         <button class="nav-link" id="widget-tab" data-bs-toggle="tab" data-bs-target="#widget" type="button"
           role="tab" aria-controls="widget" aria-selected="false"><span>INTERACT</span><img class="dot" src="./images/dot.svg"></img></button>
+      </li>
+
+      <li class="nav-item" role="presentation" id="profile-nav-tab">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+          role="tab" aria-controls="profile" aria-selected="false"><b id="profile-tab-label">Profile<i
+              class="fa fa-user-circle" aria-hidden="true"></i></b></button>
       </li>
 
       <li class="nav-item" id="leaderboard-nav-tab" role="presentation">
@@ -38,7 +44,7 @@
 
     <div class="tab-content">
       <div class="tab-pane active" id="ama" role="tabpanel" aria-labelledby="ama-tab">
-        <livelike-chat showavatar roomid="3ebd6f09-2f16-4171-b94a-c9335154d672">
+        <livelike-chat previousmessages showavatar roomid="3ebd6f09-2f16-4171-b94a-c9335154d672">
           <div slot="message-list-loading">
             <h6 style="color: white; text-align: center">Messages loading...</h6>
           </div>
@@ -64,6 +70,31 @@
           </table>
         </div>
       </div>
+
+      <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="profile-container">
+          <form autocomplete="off">
+            <p>Welcome to the Rajsthan Royal's Stadium Experience. <br />Create your profile to play.</p>
+            <label class="form-label" for="form-user-fullName"><b>Full Name</b><b class="red-text">*</b></label>
+            <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="text"
+              id="form-user-fullName" class="profile-input form-control" />
+            <br />
+            <label class="form-label" for="form-user-nickName"><b>Username</b><b class="red-text">*</b></label>
+            <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="text"
+              id="form-user-nickName" class="profile-input form-control" />
+            <br />
+            <label class="form-label" for="form-user-email"><b>Email</b><b class="red-text">*</b></label>
+            <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="email"
+              id="form-user-email" class="profile-input form-control" />
+            <p class="small-text">
+              Enter your email for a chance to win a player signed T-Shirt.
+            </p>
+          </form>
+          <br />
+          <button class="btn btn-default" id="createProfileButton" onclick="handleCreateUserProfile()">Create My
+            Profile</button>
+          <p class="small-text">*mandatory fields</p>
+        </div>
 
     </div>
   </div>

@@ -197,3 +197,20 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 .leaderboard-table > thead {
   color: #e50595;
 }
+
+.profile-container {
+  margin-top: 30px;
+  color: black;
+  background-color: white;
+  padding: 12px
+}
+
+.profile-container > button {
+  border: 3px solid #e50595 !important;
+  color: #e50595 !important;
+}
+
+.profile-input {
+  border: 3px solid #A7B1B7 !important;
+  color: #e50595 !important;
+}
