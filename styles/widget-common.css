@@ -228,3 +228,8 @@ livelike-option:not([image]) div:first-child livelike-percentage  {
 .leaderboard-container {
   padding: 12px;
 }
+
+.widget-link {
+  background-color: unset !important;
+  padding: unset;
+}
