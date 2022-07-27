@@ -219,7 +219,9 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 .profile-container {
   margin-top: 30px;
   color: white;
-  padding: 12px
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-container > button {
@@ -227,6 +229,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  align-self: center;
   padding: 9px 14px;
   width: 156px;
   height: 32px;
