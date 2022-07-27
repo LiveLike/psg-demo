@@ -12,7 +12,7 @@ livelike-title {
   color: #FFFFFF;
   padding: 2px 14px;
   font-size: 21px;
-  font-family: "proxima-nova";
+  font-family: "Romagna-Bold";
   line-height: 21px;
   font-weight: 700;
 }
@@ -82,8 +82,9 @@ livelike-option .livelike-voting-image-container {
 }
 
 livelike-description {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 12px;
+  font-family: 'Romagna-Bold';
+  font-weight: 700;
   padding: 15px 0 0 13px;
 }
 
@@ -124,9 +125,12 @@ livelike-option:not([image]) livelike-description {
 
 livelike-percentage {
   font-weight: 700;
-  font-size: 20px;
+  font-family: 'Romagna-Bold';
+  font-size: 22px;
   padding: 0 14px 0 0 !important;
+  line-height: 20px;
 }
+
 /* Correct / Incorrect / Selected*/
 livelike-description[selected],
 livelike-description[selected][incorrect],
@@ -187,14 +191,14 @@ livelike-footer {
 }
 
 .voted-text {
-  font-family: "proxima-nova" !important;
+  font-family: "Romagna-Regular" !important;
   color: #bd3040;
   font-weight: bolder;
   padding-left: 10px;
 }
 
 .voted-text {
-  font-family: "proxima-nova" !important;
+  font-family: "Romagna-Regular" !important;
   color: #bd3040;
   font-weight: bolder;
   padding-left: 10px;

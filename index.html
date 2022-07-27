@@ -31,8 +31,7 @@
 
       <li class="nav-item" role="presentation" id="profile-nav-tab">
         <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-          role="tab" aria-controls="profile" aria-selected="false"><b id="profile-tab-label">Profile<i
-              class="fa fa-user-circle" aria-hidden="true"></i></b></button>
+          role="tab" aria-controls="profile" aria-selected="false"><b id="profile-tab-label"></b></button>
       </li>
 
       <li class="nav-item" id="leaderboard-nav-tab" role="presentation">
@@ -78,9 +77,11 @@
       </div>
 
       <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <img style="position:relative; left:50%"src="./images/rr_logo.svg"/>
         <div class="profile-container">
           <form autocomplete="off">
-            <p>Welcome to the Rajsthan Royal's Stadium Experience. <br />Create your profile to play.</p>
+            <p class="welcome-text">WELCOME TO THE RAJASTHAN ROYAL's STADIUM EXPERIENCE. <p>
+            <p class="create-profile-text"> CREATE YOUR PROFILE TO PLAY.</p>
             <label class="form-label" for="form-user-fullName"><b>Full Name</b><b class="red-text">*</b></label>
             <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="text"
               id="form-user-fullName" class="profile-input form-control" />

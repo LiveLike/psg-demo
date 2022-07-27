@@ -8,6 +8,11 @@
   src: url("../images/Romagna-ExoBold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Romagna-Bold;
+  src: url("../images/Romagna-Bold.otf") format("opentype");
+}
+
 body {
   background-color: #111720;
   font-family: "Romagna-Regular";
@@ -115,8 +120,8 @@ livelike-chat livelike-chat-composer textarea {
 }
 livelike-chat livelike-chat-composer .livelike-chat-input {
   background: #111720;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 16px;
   color: white;
   border-radius: 5px;
@@ -159,16 +164,16 @@ span.mini-reaction-count {
 
 livelike-chat livelike-message-list .message-item-container .message-wrapper .sender-name {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 17px;
   color: white;
   text-transform: uppercase;
   margin-bottom: 5px;
-  font-family: "Romagna-Regular";
+  font-family: "Romagna-Bold";
 }
 livelike-chat livelike-message-list .message-item-container .message-wrapper .sender-message {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
   color: white;
   margin-bottom: 12px;
@@ -208,8 +213,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 
 .profile-container {
   margin-top: 30px;
-  color: black;
-  background-color: white;
+  color: white;
   padding: 12px
 }
 
@@ -218,10 +222,42 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
   color: #FFFFFF !important;
 }
 
-.profile-input {
-  border: 3px solid #A7B1B7 !important;
-  color: #FFFFFF !important;
+.form-label {
+  font-family: 'Romagna';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 17px;
+  color: #FFFFFF;
+  opacity: 0.64;
+  text-transform: uppercase;
 }
+
+.welcome-text {
+  text-align: center;
+  font-family: 'Romagna-Exo';
+  font-style: normal;  
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;  
+}
+
+.create-profile-text {
+  font-family: 'Romagna-Exo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 169%;
+  text-align: center;
+  color: #D22E92;
+}
+
+.profile-input {
+  border: 1px solid white !important;
+  color: white !important;
+  background-color: #111720;
+}
+
 livelike-image-number-prediction livelike-option[image] {
       flex-direction: row;
 }
@@ -241,4 +277,16 @@ tr.list-item {
 
 livelike-chat {
   margin: 10px;
+}
+
+.small-text {
+  font-family: 'Romagna-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.4;
+  margin-top: 4px;
+  text-align: center;
 }
