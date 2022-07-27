@@ -1,33 +1,33 @@
 .slider-input::-webkit-slider-runnable-track {
     height: 8px !important; 
     border-radius: 0px !important;
-    background: #1B3860 !important;
+    background: white !important;
     background-image: linear-gradient(
       90deg,
-      #BD3039,
-      #BD3039 var(--x),
+      #C42982,
+      #C42982 var(--x),
       transparent 0
     ) !important;
   }
   .slider-input::-moz-range-track {
     height: 8px !important;
     border-radius: 0px !important;
-    background: #1B3860 !important;
+    background: white !important;
     background-image: linear-gradient(
       90deg,
-      #BD3039,
-      #BD3039 var(--x),
+      #C42982,
+      #C42982 var(--x),
       transparent 0
     ) !important;
   }
   .slider-input::-ms-track {
     height: 8px !important;
     border-radius: 0px !important;
-    background: #1B3860 !important;
+    background: white !important;
     background-image: linear-gradient(
       90deg,
-      #BD3039,
-      #BD3039 var(--x),
+      #C42982,
+      #C42982 var(--x),
       transparent 0
     ) !important;
   }

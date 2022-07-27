@@ -1,15 +1,15 @@
 livelike-widget-root {
-  background-color: #f3f4f5;
+  background-color: #21272E;
   border-radius: 10px;
 }
 
 livelike-widget-header, 
 livelike-widget-body {
-  background: #F3F4F5;
+  background: #21272E;
 }
 
 livelike-title {
-  color: #0d2b56;
+  color: #FFFFFF;
   padding: 2px 14px;
   font-size: 21px;
   font-family: "proxima-nova";
@@ -30,6 +30,10 @@ livelike-image img {
   transform: translateX(-1px);
 }
 
+livelike-option[selected] {
+  background: #D22E92 !important;
+}
+
 livelike-option {
   border-radius: 5px !important;
   height: 60px;
@@ -37,16 +41,19 @@ livelike-option {
 }
 
 livelike-widget-root {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-color: #C42982;
+  border: 2px solid #C42982;
+  border-radius: 10px;
 }
 
 livelike-description {
-  color: #0d2b56;
+  color: #FFFFFF;
   /* margin-top:12px */
 }
 
 livelike-percentage {
-  color: #0d2b56;
+  color: #FFFFFF;
 }
 
 livelike-progress {
@@ -56,14 +63,14 @@ livelike-progress {
   border-radius: unset;
   top: unset !important;
   margin-top: unset !important;
-  background: #0d2b56;
+  background: #FFFFFF;
 }
 livelike-progress[image] {
   height: 4px !important;
 }
 livelike-widget-root livelike-widget-body livelike-select livelike-option {
-  background: white !important;
-  background-color: white !important;
+  background: #3F454C !important;
+  background-color: #3F454C !important;
 }
 
 livelike-option .livelike-voting-image-container {
@@ -125,7 +132,7 @@ livelike-description[selected],
 livelike-description[selected][incorrect],
 livelike-percentage[selected],
 livelike-percentage[selected][incorrect] {
-  color: #bd3039;
+  color: #FFFFFF;
 }
 
 livelike-percentage[correct] {
@@ -133,7 +140,7 @@ livelike-percentage[correct] {
 }
 
 livelike-option[selected] {
-  border-color: #bd3039;
+  border-color: #FFFFFF;
 }
 
 livelike-option[selected][correct] {
@@ -145,12 +152,12 @@ livelike-description[correct] {
 }
 
 livelike-option[selected][incorrect] {
-  border-color: #bd3039;
+  border-color: #FFFFFF;
 }
 
 livelike-progress[selected],
 livelike-progress[selected][incorrect] {
-  background: #bd3039;
+  background: #FFFFFF;
 }
 livelike-progress[correct] {
   background: #00fa64;
@@ -162,14 +169,14 @@ livelike-option[correct] {
 /*  Vote Button Footer */
 
 livelike-footer {
-  background-color: #F3F4F5 !important;
+  background-color: #21272E !important;
   margin: 0 0 6px 14px;
 }
 
 .vote-button {
   background: transparent !important;
-  border: 3px solid #0d2b56 !important;
-  color: #0d2b56 !important;
+  border: 3px solid #FFFFFF !important;
+  color: #FFFFFF !important;
   margin: 0 !important;
   padding: 3px 30px !important;
 }
@@ -195,8 +202,8 @@ livelike-footer {
 
 .predict-button {
   background: transparent !important;
-  border: 3px solid #0d2b56 !important;
-  color: #0d2b56 !important;
+  border: 3px solid #FFFFFF !important;
+  color: #FFFFFF !important;
   margin: 0 !important;
   padding: 3px 30px !important;
 }
@@ -222,7 +229,7 @@ livelike-option:not([image]) div:first-child livelike-percentage  {
 }
 
 .widget-caption {
-  color : #0d2b56
+  color : #FFFFFF
 }
 
 .leaderboard-container {

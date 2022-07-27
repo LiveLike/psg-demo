@@ -3,9 +3,13 @@
   font-family: Romagna-Regular;
   src: url("../images/Romagna-Regular.otf") format("opentype");
 }
+@font-face {
+  font-family: Romagna-Exo;
+  src: url("../images/Romagna-ExoBold.otf") format("opentype");
+}
 
 body {
-  background-color: white;
+  background-color: #111720;
   font-family: "Romagna-Regular";
 }
 
@@ -44,16 +48,17 @@ h1 {
 .widgets-timeline {
   margin-left: 10px;
   margin-right: 10px;
+  margin-top:10px
 }
 
 livelike-image-number-prediction-follow-up {
   margin: 10px;
   font-family: "Romagna-Regular" !important;
-  color: #e50595;
+  color: #FFFFFF;
 }
 
 livelike-widget-root livelike-widget-header {
-  background: #F3F4F5;
+  background: #21272E;
   text-align: start;
   margin-bottom: 15px;
   font-weight: 700;
@@ -62,13 +67,13 @@ livelike-widget-root livelike-widget-header {
 }
 
 livelike-widget-root livelike-widget-body {
-  background-color: #F3F4F5;
+  background-color: #21272E;
 }
 
 livelike-text-ask {
   margin: 10px;
   font-family: "Romagna-Regular" !important;
-  color: #e50595;
+  color: #FFFFFF;
 }
 
 .avatar {
@@ -93,44 +98,46 @@ livelike-chat livelike-message-item .sender-message span {
   height: 64px !important;
 }
 livelike-chat livelike-chat-composer {
-  background: #F3F4F5
-;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #21272E;
+  border-radius: 3px;
+  border: 1px solid white;
 }
 livelike-chat livelike-chat-composer *::placeholder {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: black !important;
+  color: white !important;
+  opacity: 0.4
 }
 livelike-chat livelike-chat-composer textarea {
   border: none !important;
 }
 livelike-chat livelike-chat-composer .livelike-chat-input {
-  background: #F3F4F5;
+  background: #111720;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: black;
-  border-radius: 22px;
-  padding-left: 20px;
+  color: white;
+  border-radius: 5px;
+  padding-left: 10px;
   padding-top: 12px;
 }
 livelike-chat livelike-chat-composer .send-icon {
+  background-color: #111720 !important;
+  background: #111720;
   padding-right: 10px;
 }
 livelike-chat livelike-message-list {
   height: 100%;
-  background: white;
+  background: #111720;
   margin-top: 10px;
 }
 livelike-chat livelike-message-list .message-item-container {
   padding: 5px 0px 0px 18px;
 }
 livelike-chat livelike-message-list .message-item-container .message-wrapper {
-  background-color: white;
+  background-color: #111720;
   padding-top: 0px;
   padding-left: 8px;
   top:-7px
@@ -142,7 +149,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .mi
 }
 
 span.mini-reaction-count {
-  color: #333333;
+  color: #111720;
   font-family: "Roboto";
   font-size: 15px;
   line-height: 6px;
@@ -154,7 +161,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .se
   font-weight: 700;
   font-size: 16px;
   line-height: 17px;
-  color: #000000;
+  color: white;
   text-transform: uppercase;
   margin-bottom: 5px;
   font-family: "Romagna-Regular";
@@ -163,7 +170,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .se
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #000000;
+  color: white;
   margin-bottom: 12px;
   font-family: "Romagna-Regular";
   padding-bottom: 10px;
@@ -171,6 +178,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .se
 livelike-chat livelike-message-list .message-item-container .message-wrapper .reaction-button-container .reaction-button {
   left: -10px;
   bottom: 2px;
+  background-color: transparent;
   background-image: url(../images/plus-circle.svg);
 }
 
@@ -195,7 +203,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 }
 
 .leaderboard-table > thead {
-  color: #e50595;
+  color: #FFFFFF;
 }
 
 .profile-container {
@@ -206,13 +214,13 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 }
 
 .profile-container > button {
-  border: 3px solid #e50595 !important;
-  color: #e50595 !important;
+  border: 3px solid #FFFFFF !important;
+  color: #FFFFFF !important;
 }
 
 .profile-input {
   border: 3px solid #A7B1B7 !important;
-  color: #e50595 !important;
+  color: #FFFFFF !important;
 }
 livelike-image-number-prediction livelike-option[image] {
       flex-direction: row;
@@ -221,4 +229,12 @@ livelike-image-number-prediction livelike-option[image] {
 livelike-progress,
 livelike-percentage{
   visibility: visible !important;
+}
+
+tr.list-item {
+  color: white;
+}
+  
+.send-icon svg {
+  fill : #FFFFFF !important
 }

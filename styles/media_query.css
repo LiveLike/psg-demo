@@ -8,8 +8,9 @@
 livelike-message-item,
 livelike-chat-composer,
 .livelike-load-more-button {
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    align-self: center;
+    margin-bottom: 10px;
   }
   .responsive-text {
     font-size: 16px;
@@ -27,6 +28,7 @@ livelike-chat-composer,
 .livelike-load-more-button {
     width: 90%;
     margin: auto;
+    margin-bottom: 10px;
   }
   .responsive-text {
     font-size: 18px;
