@@ -208,6 +208,7 @@ const setupLeaderboard = (leaderboardId) => {
           entry.profile_nickname = 'Me';
           entryRow.setAttribute('class', 'list-item current-profile-list-item');
         }
+      
         entryRow.innerHTML = `
 <td class="rank">${entry.rank}</td>
 <td class="name">${entry.profile_nickname}</td>

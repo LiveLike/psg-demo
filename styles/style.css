@@ -208,7 +208,12 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 }
 
 .leaderboard-table > thead {
-  color: #FFFFFF;
+  font-family: 'Romagna-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 11px;
+  color: #D22E92;
 }
 
 .profile-container {
@@ -361,3 +366,31 @@ livelike-chat {
   color: #FFFFFF;
   padding: 12px;
 }
+
+td.name {
+  font-family: 'Romagna-bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+td.rank {
+  font-family: 'Romagna-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 11px;
+  color: #FFFFFF;
+}
+
+td.pts {
+  font-family: 'Romagna-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+ color: #FFFFFF;
+}
+
