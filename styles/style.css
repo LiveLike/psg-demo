@@ -99,8 +99,8 @@ livelike-chat livelike-message-item .sender-message span {
 }
 livelike-chat livelike-chat-composer {
   background: #21272E;
-  border-radius: 3px;
-  border: 1px solid white;
+  border-radius: 5px;
+  border: 2px solid white;
 }
 livelike-chat livelike-chat-composer *::placeholder {
   font-style: normal;
@@ -237,4 +237,8 @@ tr.list-item {
   
 .send-icon svg {
   fill : #FFFFFF !important
+}
+
+livelike-chat {
+  margin: 10px;
 }

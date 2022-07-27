@@ -8,7 +8,7 @@
 livelike-message-item,
 livelike-chat-composer,
 .livelike-load-more-button {
-    width: 90%;
+    width: 100%;
     align-self: center;
     margin-bottom: 10px;
   }
