@@ -252,6 +252,11 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
   color: #D22E92;
 }
 
+.form-control {
+  color: white !important;
+  background-color: #111720 !important;
+}
+
 .profile-input {
   border: 1px solid white !important;
   color: white !important;
