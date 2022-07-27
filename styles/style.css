@@ -218,9 +218,44 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 }
 
 .profile-container > button {
-  border: 3px solid #FFFFFF !important;
-  color: #FFFFFF !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 14px;
+  gap: 10px;
+
+  position: absolute;
+  width: 156px;
+  height: 32px;
+  left: 83px;
+  top: 80%;
+  left: 100px;
+  top: 80%;
+  background: #D22E92;
+  border-radius: 5px;
 }
+
+.profile-container > button:disabled {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 14px;
+  gap: 10px;
+
+  position: absolute;
+  width: 156px;
+  height: 32px;
+  left: 83px;
+  top: 458px;
+  left: 100px;
+  top: 80%;
+  background: #7E7E7E;
+  border-radius: 5px;
+}
+
+
 
 .form-label {
   font-family: 'Romagna';
@@ -294,4 +329,35 @@ livelike-chat {
   opacity: 0.4;
   margin-top: 4px;
   text-align: center;
+}
+
+.mandatory-text {
+  font-family: 'Romagna-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.reward-text-container{
+  background: #3F454C;
+  border-radius: 4px;
+  margin: 10px;
+  height: 36px;
+  display: flex;
+  text-decoration: none;
+}
+
+.get-rewarded-text {
+  color: white;
+  font-family: 'Romagna-Exo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  padding: 12px;
 }

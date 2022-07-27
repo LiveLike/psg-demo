@@ -23,7 +23,7 @@ const showAllTabs = () => {
   document.querySelector('#timeline-nav-tab').style.display = 'block';
   document.querySelector('#leaderboard-nav-tab').style.display = 'block';
   document.getElementById('profile-nav-tab').style.display = 'none';
-  document.querySelector('#ama-nav-tab').click();
+  document.querySelector('#ama-tab').click();
 };
 
 const updateUserProfile = ({ fullName, email, nickname }) => {
