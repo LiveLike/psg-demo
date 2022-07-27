@@ -228,34 +228,19 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
   justify-content: center;
   align-items: center;
   padding: 9px 14px;
-  gap: 10px;
-
-  position: absolute;
   width: 156px;
   height: 32px;
-  left: 83px;
-  top: 80%;
-  left: 100px;
-  top: 80%;
   background: #D22E92;
   border-radius: 5px;
 }
 
 .profile-container > button:disabled {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 9px 14px;
-  gap: 10px;
-
-  position: absolute;
   width: 156px;
   height: 32px;
-  left: 83px;
-  top: 458px;
-  left: 100px;
-  top: 80%;
+  align-self: center;
+  justify-content: end;
+  justify-self: flex-end;
   background: #7E7E7E;
   border-radius: 5px;
 }
@@ -343,7 +328,7 @@ livelike-chat {
   font-size: 11px;
   line-height: 18px;
   color: #FFFFFF;
-  margin-top: 14px;
+  margin-top: 8px;
   text-align: center;
 }
 
@@ -393,4 +378,16 @@ td.pts {
   line-height: 14px;
  color: #FFFFFF;
 }
+
+.user-profile-points {
+  font-family: 'Romagna-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  align-self: center;
+  margin-bottom:0px
+}
+
 

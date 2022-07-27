@@ -183,24 +183,24 @@ const setupLeaderboard = (leaderboardId) => {
       lbContainer.children.length > 0 &&
         Array.from(lbContainer.children).forEach((el) => el.remove());
 
-      // Get current profile results
-      const currentProfileEntry = lb.entries.find(
-        (x) => x.profile_id == LiveLike.userProfile.id
-      );
-      if (currentProfileEntry) {
-        if (currentProfileEntry.rank >= 10) {
-          lb.entries.unshift(currentProfileEntry);
-        }
-      } else {
-        lb.entries.unshift({
-          profile_id: LiveLike.userProfile.id,
-          rank: '',
-          score: 0,
-        });
-      }
+      // // Get current profile results
+      // const currentProfileEntry = lb.entries.find(
+      //   (x) => x.profile_id == LiveLike.userProfile.id
+      // );
+      // if (currentProfileEntry) {
+      //   if (currentProfileEntry.rank >= 10) {
+      //     lb.entries.unshift(currentProfileEntry);
+      //   }
+      // } else {
+      //   lb.entries.unshift({
+      //     profile_id: LiveLike.userProfile.id,
+      //     rank: '',
+      //     score: 0,
+      //   });
+      // }
 
       // Loop through leaderboard entries to create list items for each entry
-      lb.entries = lb.entries.slice(0, 10);
+      // lb.entries = lb.entries.slice(0, 10);
       lb.entries.forEach((entry) => {
         const entryRow = document.createElement('tr');
         entryRow.setAttribute('class', 'list-item');
