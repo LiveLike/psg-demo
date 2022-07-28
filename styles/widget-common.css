@@ -177,44 +177,59 @@ livelike-footer {
   margin: 0 0 6px 14px;
 }
 
+livelike-alert livelike-footer {
+  background-color: #3F454C !important;
+  margin: 0 0 6px 14px;
+}
+
+.widget-link:after {
+  top:8px
+}
+
 .vote-button {
-  background: transparent !important;
-  border: 3px solid #FFFFFF !important;
+  background: #D22E92 !important;
+  border: unset !important;
   color: #FFFFFF !important;
   margin: 0 !important;
   padding: 3px 30px !important;
+  font-family: 'Romagna-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .vote-button[disabled] {
-  border: 3px solid #A7B1B7 !important;
-  color: #A7B1B7 !important;
+  background: #7E7E7E !important;
+  border: unset !important;
+  color: #FFFFFF !important;
 }
 
 .voted-text {
   font-family: "Romagna-Regular" !important;
-  color: #bd3040;
-  font-weight: bolder;
-  padding-left: 10px;
-}
-
-.voted-text {
-  font-family: "Romagna-Regular" !important;
-  color: #bd3040;
-  font-weight: bolder;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14px;
+  color: #FFFFFF;
   padding-left: 10px;
 }
 
 .predict-button {
-  background: transparent !important;
-  border: 3px solid #FFFFFF !important;
+  background: #D22E92 !important;
+  border: unset !important;
   color: #FFFFFF !important;
   margin: 0 !important;
   padding: 3px 30px !important;
+  font-family: 'Romagna-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .predict-button[disabled] {
-  border: 3px solid #A7B1B7 !important;
-  color: #A7B1B7 !important;
+  background: #7E7E7E;
+  border:unset !important;
+  color: #FFFFFF !important;
 }
 
 
@@ -243,4 +258,9 @@ livelike-option:not([image]) div:first-child livelike-percentage  {
 .widget-link {
   background-color: unset !important;
   padding: unset;
+  color:white
+}
+
+.widget-link:after {
+  top:7px
 }
