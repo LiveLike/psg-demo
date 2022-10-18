@@ -13,3 +13,13 @@ livelike-widget-body {
 livelike-footer {
     background-color: transparent !important;
 }
+
+livelike-percentatge {
+    font-family: 'PSGFont' !important;
+}
+
+
+td, th  {
+    padding-bottom: 10px;
+    font-size: 16px;
+}

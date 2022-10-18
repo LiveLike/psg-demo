@@ -13,9 +13,8 @@ livelike-title {
   background-color: #183F6C;
   padding: 2px 14px;
   font-size: 21px;
-  font-family: "Geometos";
+  font-family: "PSGFont";
   line-height: 21px;
-  font-weight: 700;
 }
 
 livelike-image {
@@ -88,14 +87,12 @@ livelike-option .livelike-voting-image-container {
 
 livelike-description {
   font-size: 12px;
-  font-family: 'Geometos';
-  font-weight: 700;
+  font-family: 'PSGFont';
   padding: 15px 0 0 13px;
 }
 
 livelike-option .livelike-voting-image-container .image-description-wrapper {
   font-size: 15px;
-  font-weight: 500;
   display: flex;
   height: 100%;
   width: calc(80% - 14px);
@@ -110,7 +107,6 @@ livelike-option .livelike-voting-image-container .image-description-wrapper live
 
 livelike-option[image] {
   flex-direction: row-reverse;
-  font-weight: 500;
   line-height: 15px;
   font-size: 12px;
   padding: 0px;
@@ -137,7 +133,6 @@ livelike-option:not([image]) livelike-description {
 }
 
 livelike-percentage {
-  font-weight: 700;
   font-family: 'd';
   font-size: 22px;
   padding: 0 14px 0 0 !important;
@@ -208,9 +203,8 @@ livelike-alert livelike-footer {
   color: #FFFFFF !important;
   margin: 0 !important;
   padding: 3px 30px !important;
-  font-family: "Geometos";
+  font-family: "PSGFont";
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
 }
 
@@ -222,9 +216,8 @@ livelike-alert livelike-footer {
 }
 
 .voted-text {
-  font-family: "Geometos" !important;
+  font-family: "PSGFont" !important;
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 14px;
   color: #FFFFFF;
@@ -237,9 +230,8 @@ livelike-alert livelike-footer {
   color: #FFFFFF !important;
   margin: 0 !important;
   padding: 3px 30px !important;
-  font-family: "Geometos";
+  font-family: "PSGFont";
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
 }
 

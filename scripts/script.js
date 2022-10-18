@@ -68,8 +68,8 @@ const setupLeaderboard = (leaderboardId) => {
     })
       .then((profileRank) => {
         // If rank and points element already exist, update their values
-        const ptsEl = document.querySelector('#user-profile-points');
-        ptsEl.innerHTML = `${profileRank.score} Pts.`;
+        //const ptsEl = document.querySelector('#user-profile-points');
+        //ptsEl.innerHTML = `${profileRank.score} Pts.`;
       })
       .catch(() => console.log('Current user not a part of leaderboard yet.'));
   };
@@ -135,9 +135,9 @@ const setupLeaderboard = (leaderboardId) => {
     document.addEventListener('rankchange', (data) => {
         updateLeaderboardData();
         if (data.detail.rewards.length) {
-          const ptsEl = document.querySelector('#user-profile-points');
-          ptsEl.classList.add('bounce');
-          setTimeout(() => ptsEl.classList.remove('bounce'), 1200);
+          //const ptsEl = document.querySelector('#user-profile-points');
+          //ptsEl.classList.add('bounce');
+          //setTimeout(() => ptsEl.classList.remove('bounce'), 1200);
         }
     });
   }
