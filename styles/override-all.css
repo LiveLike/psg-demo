@@ -19,7 +19,13 @@ livelike-percentatge {
 }
 
 
-td, th  {
+td,
+th {
     padding-bottom: 10px;
     font-size: 16px;
+}
+
+livelike-progress {
+    background-color: white !important;
+    z-index: 100 !important;
 }
