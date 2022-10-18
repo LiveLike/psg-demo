@@ -29,3 +29,24 @@ livelike-progress {
     background-color: white !important;
     z-index: 100 !important;
 }
+
+#createProfileButton {
+    color: white;
+    background-color: #CF2E25;
+    width: 144px;
+    height: 41px;
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#createProfileButton:disabled,
+#createProfileButton[disabled] {
+    color: white;
+    background-color: #C8C8C8;
+    width: 144px;
+    height: 41px;
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: normal;
+}

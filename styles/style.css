@@ -150,7 +150,7 @@ span.mini-reaction-count {
   color: white;
 }
 
-.profile-container>button:disabled {
+/* .profile-container>button:disabled {
   font-size: 12px;
   padding: 9px 14px;
   width: 144px;
@@ -160,7 +160,7 @@ span.mini-reaction-count {
   justify-self: flex-end;
   background: #C8C8C8;
   color: white;
-}
+} */
 
 
 
