@@ -93,4 +93,27 @@
   visibility: visible;
 }
 
-/*# sourceMappingURL=navbar.css.map */
+/* Scrolling changes*/
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+}
+
+.static-content-top {
+  position: relative;
+}
+
+.tab-content {
+  padding-top: 0;
+  max-height: calc(100% - 250px);
+  overflow-y: auto;
+  /* height: calc(100% - 250px); */
+  /* min-height: calc(100% - 250px); */
+}
