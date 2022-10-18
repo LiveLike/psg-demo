@@ -41,7 +41,7 @@ class CustomTextAsk extends LiveLikeTextAsk {
                                     color: white;
                                     font-size: 11px;
                                     font-weight: 400;
-                                    font-family: 'Romagna-Regular';
+                                    font-family: "Geometos";
                                     margin: 4px 12px 4px 14px;" class="${!this.showConfirmation ? 'hidden' : ''}">
                                     <span>${this.confirmation_message}</span>
                                 </div>

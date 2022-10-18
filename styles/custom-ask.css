@@ -1,11 +1,11 @@
   custom-text-ask {
-    font-family: "Romagna-Regular" !important;
+    font-family: "Geometos" !important;
   }
 
   custom-text-ask  livelike-title {
     color: #FFFFFF;
     font-weight: 700;
-    font-family: "Romagna-Regular" !important;
+    font-family: "Geometos" !important;
     font-size: 15px;
     line-height: 15px;
     padding: 14px 14px 10px 14px
@@ -35,7 +35,7 @@
   }
   
   .text-ask-input {
-    font-family: "Romagna-Regular" !important;
+    font-family: "Geometos" !important;
   }
   
   .accordion-button:not(.collapsed) {

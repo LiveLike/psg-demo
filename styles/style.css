@@ -1,21 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@font-face {
-  font-family: Romagna-Regular;
-  src: url("../images/Romagna-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: Romagna-Exo;
-  src: url("../images/Romagna-ExoBold.otf") format("opentype");
-}
 
 @font-face {
-  font-family: Romagna-Bold;
-  src: url("../images/Romagna-Bold.otf") format("opentype");
+  font-family: Geometos;
+  src: url("../fonts/Geometos.ttf") format("opentype");
 }
 
 body {
-  background-color: #111720;
-  font-family: "Romagna-Regular";
+  background-color: #1E2B4A;
+  font-family: "Geometos";
 }
 
 h1 {
@@ -58,7 +50,7 @@ h1 {
 
 livelike-image-number-prediction-follow-up {
   margin: 10px;
-  font-family: "Romagna-Regular" !important;
+  font-family: "Geometos" !important;
   color: #FFFFFF;
 }
 
@@ -77,7 +69,7 @@ livelike-widget-root livelike-widget-body {
 
 livelike-text-ask {
   margin: 10px;
-  font-family: "Romagna-Regular" !important;
+  font-family: "Geometos" !important;
   color: #FFFFFF;
 }
 
@@ -155,7 +147,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .mi
 
 span.mini-reaction-count {
   color: #111720;
-  font-family: "Roboto";
+  font-family: "Geometos";
   font-size: 15px;
   line-height: 6px;
   margin-left:6px;
@@ -169,7 +161,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .se
   color: white;
   text-transform: uppercase;
   margin-bottom: 5px;
-  font-family: "Romagna-Bold";
+  font-family: "Geometos";
 }
 livelike-chat livelike-message-list .message-item-container .message-wrapper .sender-message {
   font-weight: 400;
@@ -177,7 +169,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .se
   line-height: 17px;
   color: white;
   margin-bottom: 12px;
-  font-family: "Romagna-Regular";
+  font-family: "Geometos";
   padding-bottom: 10px;
 }
 livelike-chat livelike-message-list .message-item-container .message-wrapper .reaction-button-container .reaction-button {
@@ -208,7 +200,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 }
 
 .leaderboard-table > thead {
-  font-family: 'Romagna-Regular';
+  font-family: 'Geometos';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -251,7 +243,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 
 
 .form-label {
-  font-family: 'Romagna';
+  font-family: 'Geometos';
   font-style: normal;
   font-weight: 700;
   font-size: 11px;
@@ -263,7 +255,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 
 .welcome-text {
   text-align: center;
-  font-family: 'Romagna-Exo';
+  font-family: 'Geometos';
   font-style: normal;  
   font-weight: 700;
   font-size: 14px;
@@ -271,7 +263,7 @@ livelike-chat livelike-message-list .message-item-container .message-wrapper .re
 }
 
 .create-profile-text {
-  font-family: 'Romagna-Exo';
+  font-family: 'Geometos';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -313,7 +305,7 @@ livelike-chat {
 }
 
 .small-text {
-  font-family: 'Romagna-Regular';
+  font-family: "Geometos";
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -325,7 +317,7 @@ livelike-chat {
 }
 
 .mandatory-text {
-  font-family: 'Romagna-Regular';
+  font-family: "Geometos";
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -346,7 +338,7 @@ livelike-chat {
 
 .get-rewarded-text {
   color: white;
-  font-family: 'Romagna-Exo';
+  font-family: "Geometos";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -356,7 +348,7 @@ livelike-chat {
 }
 
 td.name {
-  font-family: 'Romagna-bold';
+  font-family: 'Geometos';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -365,7 +357,7 @@ td.name {
 }
 
 td.rank {
-  font-family: 'Romagna-Regular';
+  font-family: "Geometos";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -374,7 +366,7 @@ td.rank {
 }
 
 td.pts {
-  font-family: 'Romagna-Bold';
+  font-family: 'Geometos';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -383,7 +375,7 @@ td.pts {
 }
 
 .user-profile-points {
-  font-family: 'Romagna-Bold';
+  font-family: 'Geometos';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

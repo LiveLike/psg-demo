@@ -5,7 +5,7 @@
   margin-left: 0;
   top: 20vh;
   height: 6vh;
-  background-color: #171725;
+  background-color: #1E2B4A;
 }
 
 .nav-item {
@@ -17,7 +17,7 @@
 .nav-tabs {
   border : unset !important;
   height : 42px !important;
-  font-family: "Romagna-Exo";
+  font-family: "Geometos";
 }
 
 .nav-link {
@@ -26,18 +26,18 @@
   justify-content: center;
   height: 100%;
   padding: 8px;
-  background-color: #e50595 !important;
+  background-color: #1E2B4A !important;
   color:white;
   font-size:12px;
   font-weight: 700;
-  font-family: "Romagna-Exo";
+  font-family: "Geometos";
   font-style: normal;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  color: white !important;
+  color: #B7B9BC !important;
   border-color: #111720 #111720 #111720 !important;
-  background-color: #111720 !important;
+  background-color: #ffffff !important;
 }
 
 .nav-tabs .nav-link {
@@ -52,7 +52,7 @@
 .nav-pills .nav-link {
   background-color: #171725;
   border-radius: 0;
-  font-family: "Romagna-Regular";
+  font-family: "Geometos";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -64,7 +64,7 @@
   color: #e50595;
   background-color: #171725;
   border-bottom: 2px solid #f26a16;
-  font-family: "Romagna-Regular";
+  font-family: "Geometos";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
