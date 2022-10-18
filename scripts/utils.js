@@ -31,7 +31,7 @@ const showAllTabs = () => {
     document.querySelector('#leaderboard-nav-tab').style.display = 'block';
     document.getElementById('profile-nav-tab').style.display = 'none';
     // document.querySelector('#ama-tab').click();
-    document.querySelector('#leaderboard-tab').click();
+    document.querySelector('#widget-tab').click();
 };
 
 const updateUserProfile = ({ fullName, email, nickname }) => {
