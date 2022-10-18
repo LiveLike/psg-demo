@@ -21,7 +21,7 @@ const init = (clientId, programId, leaderboardId) => {
         widgetsContainer.programid = programId;
         //const chatContainer = document.querySelector('livelike-chat');
         //chatContainer.roomId = roomId;
-        addListenersForDot(programId, roomId)
+        addListenersForDot(programId)
       });
 };
 
@@ -37,7 +37,7 @@ function addAMAWidgetFilter() {
     widgets && (widgets.onWidgetReceived = filterNewAlertWidgets);
 };
 
-function addListenersForDot(programId, roomId) {
+function addListenersForDot(programId) {
   LiveLike.addWidgetListener(
     {programId: programId}, 
     (e) => {
