@@ -31,6 +31,7 @@ const showAllTabs = () => {
     document.querySelector('#leaderboard-nav-tab').style.display = 'block';
     document.getElementById('profile-nav-tab').style.display = 'none';
     // document.querySelector('#ama-tab').click();
+    console.log(document.getElementById('widget'));
     document.querySelector('#widget-tab').click();
 };
 
@@ -95,5 +96,6 @@ const showProfileTabIfFirstTimeVisiting = () => {
     } else {
         document.getElementById("player").style.display = "grid";
         document.getElementById('profile-nav-tab').style.display = 'none';
+        document.getElementById('widget-tab').click();
     }
 };
