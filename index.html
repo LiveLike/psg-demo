@@ -91,11 +91,9 @@
 
       <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <div style="display: flex; flex-direction: column;">
-          <img style="align-self: center;" src="./images/rr_logo.svg"/>
+          <img style="align-self: center;" src="./images/psg-logo.svg"/>
           <div class="profile-container">
             <form autocomplete="off">
-              <p class="welcome-text">WELCOME TO THE RAJASTHAN ROYAL's STADIUM EXPERIENCE. <p>
-              <p class="create-profile-text"> CREATE YOUR PROFILE TO PLAY.</p>
               <label class="form-label" for="form-user-fullName"><b>Full Name</b><b class="red-text">*</b></label>
               <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="text"
                 id="form-user-fullName" class="profile-input form-control" />
@@ -107,17 +105,12 @@
               <label class="form-label" for="form-user-email"><b>Email</b><b class="red-text">*</b></label>
               <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="email"
                 id="form-user-email" class="profile-input form-control" />
-              <p class="small-text">
-                Enter your email for a chance to win a player signed T-Shirt.
-              </p>
             </form>
             <br />
-            <button class="btn btn-default" id="createProfileButton" onclick="handleCreateUserProfile()">Create My
-              Profile</button>
-            <p class="mandatory-text">*mandatory fields</p>
+            <button class="btn btn-default" id="createProfileButton" onclick="handleCreateUserProfile()">Create Profile</button>
+            <p class="mandatory-text">*REQUIRED FIELD</p>
           </div>
         </div>
-
     </div>
   </div>
 
