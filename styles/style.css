@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Geometos;
-  src: url("../fonts/Geometos.ttf") format("opentype");
+  src: url("../fonts/Alternate_Gothic_No3_D_Regular.otf") format("opentype");
 }
 
 body {
@@ -122,7 +122,7 @@ span.mini-reaction-count {
   font-weight: 400;
   font-size: 12px;
   line-height: 11px;
-  color: #D22E92;
+  color: #CF2E25;
 }
 
 .profile-container {
@@ -300,5 +300,17 @@ td.pts {
 }
 
 #player>img {
+  background-color: #c0c0c0;
   width: 100% !important;
+}
+
+.static-content-top {
+  width: 100% !important;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.tab-content{
+  padding-top: 250px;
 }
