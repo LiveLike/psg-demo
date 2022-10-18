@@ -219,7 +219,6 @@ tr.list-item {
   fill: #FFFFFF !important
 }
 
-
 .small-text {
   font-family: "Geometos";
   font-style: normal;
@@ -238,7 +237,7 @@ tr.list-item {
   font-weight: 400;
   font-size: 11px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: gray;
   margin-top: 8px;
   text-align: center;
 }
