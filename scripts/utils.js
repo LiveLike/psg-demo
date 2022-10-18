@@ -49,6 +49,7 @@ const updateUserProfile = ({ fullName, email, nickname }) => {
             localStorage.setItem('ProfileIsValid', true);
             refreshProfileData();
             showAllTabs();
+            document.getElementById("player").style.display = "grid";
         })
         .catch((err) => {
             console.warn(err);
@@ -84,7 +85,6 @@ const showProfileTab = () => {
     //document.querySelector('#ama-nav-tab').style.display = 'none';
     document.querySelector('#timeline-nav-tab').style.display = 'none';
     document.querySelector('#leaderboard-nav-tab').style.display = 'none';
-
     document.getElementById('profile-tab-label').click();
 };
 
@@ -93,6 +93,7 @@ const showProfileTabIfFirstTimeVisiting = () => {
     if (!profileIsValid()) {
         showProfileTab();
     } else {
+        document.getElementById("player").style.display = "grid";
         document.getElementById('profile-nav-tab').style.display = 'none';
     }
 };

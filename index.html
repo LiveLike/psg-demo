@@ -19,14 +19,19 @@
 
 <body>
   <div class="container" style="padding:0px">
+
+    <div style="display: none;" id="player">
+      <img src="./images/psg-player.png" alt="">
+    </div>
+
     <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
       <!-- <li class="nav-item" id="ama-nav-tab" role="presentation">
         <button class="nav-link active" id="ama-tab" data-bs-toggle="tab" data-bs-target="#ama" type="button"
           role="tab" aria-controls="ama" aria-selected="true"><span>CHAT</span><img class="dot hidden" src="./images/dot.svg"></img></button>
       </li> -->
       <li class="nav-item" id="timeline-nav-tab" role="presentation">
-        <button class="nav-link" id="widget-tab" data-bs-toggle="tab" data-bs-target="#widget" type="button"
-          role="tab" aria-controls="widget" aria-selected="false"><span>INTERACT</span></button>
+        <button class="nav-link" id="widget-tab" data-bs-toggle="tab" data-bs-target="#widget" type="button" role="tab"
+          aria-controls="widget" aria-selected="false"><span>INTERACT</span></button>
       </li>
 
       <li style="display: none;" class="nav-item" role="presentation" id="profile-nav-tab">
@@ -42,41 +47,48 @@
     </ul>
 
     <div class="tab-content">
-      <!-- <div class="tab-pane active" id="ama" role="tabpanel" aria-labelledby="ama-tab">
-        <livelike-chat previousmessages showavatar roomid="3ba3df66-3a37-41e9-b7cf-40238149d8ce">
-          <div slot="message-list-loading">
-            <h6 style="color: white; text-align: center">Messages loading...</h6>
-          </div>
-          <div slot="message-list-empty" style="color: white; text-align: center">
-            <h6>No messages yet</h6>
-            <p>Send the first message!</p>
-          </div>
-        </livelike-chat>
-      </div> -->
+
       <div class="tab-pane active" id="widget" role="tabpanel" aria-labelledby="widget-tab">
         <livelike-widgets class="widgets-timeline" mode="interactive-timeline"></livelike-widgets>
       </div>
 
       <div class="tab-pane" id="leaderboard" role="tabpanel" aria-labelledby="leaderboard-tab">
-        
-          <div style="display: flex; flex-direction: row; margin:14px">
-            <div class="avatar"><!----><svg width="64px" height="64px" viewBox="0 0 64 64"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g><g><rect id="Rectangle" fill="#505A64" x="0" y="0" width="64" height="64"></rect><path d="M31.9590262,14 C40.9427465,14 44.8185604,18.1297028 43.8568799,26.9807577 C42.8951994,35.8318125 39.1802051,40 31.9730147,40 C26.0823195,40 21.3936793,37.5331739 20.2595234,28.1644789 C19.1253676,18.7957839 21.4756955,14 31.9590262,14 Z" id="Path-2" fill="#8C96A0"></path><path d="M8,64 C13.6440504,52.375041 21.5113023,46.3802666 31.6017556,46.0156768 C41.692209,45.651087 49.8249571,51.6458614 56,64 L8,64 Z" id="Path-3" fill="#8C96A0"></path></g></g></g></svg><!----></div>
-            <p class="user-profile-points">0</p>>
+
+        <div style="display: flex; flex-direction: row; margin:14px">
+          <div class="avatar">
+            <!----><svg width="64px" height="64px" viewBox="0 0 64 64">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g>
+                  <g>
+                    <rect id="Rectangle" fill="#505A64" x="0" y="0" width="64" height="64"></rect>
+                    <path
+                      d="M31.9590262,14 C40.9427465,14 44.8185604,18.1297028 43.8568799,26.9807577 C42.8951994,35.8318125 39.1802051,40 31.9730147,40 C26.0823195,40 21.3936793,37.5331739 20.2595234,28.1644789 C19.1253676,18.7957839 21.4756955,14 31.9590262,14 Z"
+                      id="Path-2" fill="#8C96A0"></path>
+                    <path
+                      d="M8,64 C13.6440504,52.375041 21.5113023,46.3802666 31.6017556,46.0156768 C41.692209,45.651087 49.8249571,51.6458614 56,64 L8,64 Z"
+                      id="Path-3" fill="#8C96A0"></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <!---->
           </div>
-          <a class="reward-text-container" href="https://www.rajasthanroyals.com/" target="_blank"> 
-            <span class="get-rewarded-text">
-              REGISTER TO GET REWARDED
-            </span>
-            <img style ="
+          <p class="user-profile-points">0</p>>
+        </div>
+        <a class="reward-text-container" href="https://www.rajasthanroyals.com/" target="_blank">
+          <span class="get-rewarded-text">
+            REGISTER TO GET REWARDED
+          </span>
+          <img style="
               width: 16px;
               height: 16px;
               align-self: center;
               float: right;
               left: 90%;
               position: absolute;
-              " src="./images/chevron.svg"/>
-            </a>
-      
+              " src="./images/chevron.svg" />
+        </a>
+
         <div class="leaderboard-container">
           <table class="leaderboard-table">
             <thead>
@@ -91,7 +103,7 @@
 
       <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <div style="display: flex; flex-direction: column;">
-          <img style="align-self: center;" src="./images/psg-logo.svg"/>
+          <img style="align-self: center;" src="./images/psg-logo.svg" />
           <div class="profile-container">
             <form autocomplete="off">
               <label class="form-label" for="form-user-fullName"><b>Full Name</b><b class="red-text">*</b></label>
@@ -107,35 +119,36 @@
                 id="form-user-email" class="profile-input form-control" />
             </form>
             <br />
-            <button class="btn btn-default" id="createProfileButton" onclick="handleCreateUserProfile()">Create Profile</button>
+            <button class="btn btn-default" id="createProfileButton" onclick="handleCreateUserProfile()">Create
+              Profile</button>
             <p class="mandatory-text">*REQUIRED FIELD</p>
           </div>
         </div>
+      </div>
     </div>
-  </div>
 
-  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@livelike/engagementsdk@2.19.0/livelike.umd.js"></script>
-  <script src="scripts/customwidget.js"></script>
-  <script src="scripts/utils.js"></script>
-  <script src="scripts/script.js"></script>
-  <script>
-    const clientId = "QcGUcxr97Bf05j6Dz1v8anj7FPWZ58GWlIatzJkz";
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@livelike/engagementsdk@2.19.0/livelike.umd.js"></script>
+    <script src="scripts/customwidget.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+      const clientId = "QcGUcxr97Bf05j6Dz1v8anj7FPWZ58GWlIatzJkz";
 
-    const programId = "9c6c7016-828b-4420-9cd6-c4d03c11d56a";
-    //const roomId = "3ba3df66-3a37-41e9-b7cf-40238149d8ce"
-    const leaderboardId = "3894191a-a2b5-484c-8cd4-e591298a05fb";
+      const programId = "9c6c7016-828b-4420-9cd6-c4d03c11d56a";
+      //const roomId = "3ba3df66-3a37-41e9-b7cf-40238149d8ce"
+      const leaderboardId = "3894191a-a2b5-484c-8cd4-e591298a05fb";
 
-    // const programId = "078dac72-554e-4f52-8db4-fd592e59439d"
-    // const leaderboardId="c17a872c-bc4d-47d0-8d3c-d08cfba8ed09";
+      // const programId = "078dac72-554e-4f52-8db4-fd592e59439d"
+      // const leaderboardId="c17a872c-bc4d-47d0-8d3c-d08cfba8ed09";
 
-    init(clientId, programId, leaderboardId);
-  </script>
+      init(clientId, programId, leaderboardId);
+    </script>
 </body>
 
 </html>
