@@ -54,6 +54,11 @@ livelike-image-number-prediction-follow-up {
   color: #FFFFFF;
 }
 
+livelike-widget-root {
+  
+  padding-bottom: 5px !important;
+}
+
 livelike-widget-root livelike-widget-header {
   background: #21272E;
   text-align: start;
@@ -122,7 +127,7 @@ span.mini-reaction-count {
   font-weight: 400;
   font-size: 12px;
   line-height: 11px;
-  color: #D22E92;
+  color: #CF2E25;
 }
 
 .profile-container {
@@ -188,7 +193,7 @@ span.mini-reaction-count {
   font-size: 14px;
   line-height: 169%;
   text-align: center;
-  color: #D22E92;
+  color: #CF2E25;
 }
 
 .form-control {
@@ -209,6 +214,7 @@ livelike-image-number-prediction livelike-option[image] {
 livelike-progress,
 livelike-percentage {
   visibility: visible !important;
+  
 }
 
 tr.list-item {

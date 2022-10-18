@@ -129,7 +129,6 @@ livelike-option:not([image]) div:first-child {
 
 livelike-option:not([image]) livelike-percentage {
   align-self: center;
-  background-color: #102946 !important;
 }
 
 livelike-option:not([image]) livelike-description {
@@ -203,8 +202,9 @@ livelike-alert livelike-footer {
 }
 
 .vote-button {
-  background: #D22E92 !important;
+  background: #CF2E25 !important;
   border: unset !important;
+  border-radius: 0px !important;
   color: #FFFFFF !important;
   margin: 0 !important;
   padding: 3px 30px !important;
@@ -216,6 +216,7 @@ livelike-alert livelike-footer {
 
 .vote-button[disabled] {
   background: #7E7E7E !important;
+  border-radius: 0px !important;
   border: unset !important;
   color: #FFFFFF !important;
 }
@@ -231,7 +232,7 @@ livelike-alert livelike-footer {
 }
 
 .predict-button {
-  background: #D22E92 !important;
+  background: #CF2E25 !important;
   border: unset !important;
   color: #FFFFFF !important;
   margin: 0 !important;
