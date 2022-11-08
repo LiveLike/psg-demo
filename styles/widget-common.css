@@ -1,16 +1,16 @@
 livelike-widget-root {
-  background-color: #183F6C;
+  background-color: #1A2434;
   border-radius: 10px;
 }
 
 livelike-widget-header,
 livelike-widget-body {
-  background: #183F6C;
+  background: #1A2434;
 }
 
 livelike-title {
   color: #FFFFFF;
-  background-color: #183F6C;
+  background-color: #1A2434;
   padding: 2px 14px;
   font-size: 21px;
   font-family: "PSGFont";
@@ -30,7 +30,7 @@ livelike-image img {
 }
 
 livelike-option[selected] {
-  background: #183F6C !important;
+  background: #1A2434 !important;
 }
 
 livelike-option {
@@ -68,12 +68,12 @@ livelike-progress[image] {
 
 
 livelike-widget-root livelike-widget-body livelike-select livelike-option {
-  background: #183F6C !important;
-  background-color: #183F6C !important;
+  background: #1A2434 !important;
+  background-color: #1A2434 !important;
 }
 
 livelike-select {
-  background-color: #183F6C !important;
+  background-color: #1A2434 !important;
 }
 
 livelike-option .livelike-voting-image-container {
