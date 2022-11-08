@@ -4,11 +4,10 @@ const profileIsValid = () => {
         return true;
     }
 
-    const fullName = document.querySelector('#form-user-fullName').value;
     const nickname = document.querySelector('#form-user-nickName').value;
     const email = document.querySelector('#form-user-email').value;
 
-    if (fullName && email && nickname) {
+    if (email && nickname) {
         return true;
     }
 
@@ -26,22 +25,22 @@ const performUserFormValidation = () => {
 };
 
 const showAllTabs = () => {
-    //document.querySelector('#ama-nav-tab').style.display = 'block';
     document.querySelector('#timeline-nav-tab').style.display = 'block';
     document.querySelector('#leaderboard-nav-tab').style.display = 'block';
     document.getElementById('profile-nav-tab').style.display = 'none';
-    // document.querySelector('#ama-tab').click();
-    console.log(document.getElementById('widget'));
     document.querySelector('#widget-tab').click();
+    const staticHeaderImage = document.getElementById("static-header-image");
+    staticHeaderImage.setAttribute("src", "./images/small-header.jpg");
+    staticHeaderImage.style.height = "120px";
+    
 };
 
-const updateUserProfile = ({ fullName, email, nickname }) => {
+const updateUserProfile = ({ email, nickname }) => {
     LiveLike.updateUserProfile({
         accessToken: LiveLike.userProfile.access_token,
         options: {
             nickname: nickname,
             custom_data: JSON.stringify({
-                fullName: fullName,
                 email: email,
             }),
         },
@@ -75,7 +74,6 @@ const refreshProfileData = () => {
 const handleCreateUserProfile = (e) => {
     if (profileIsValid()) {
         updateUserProfile({
-            fullName: document.querySelector('#form-user-fullName').value,
             email: document.querySelector('#form-user-email').value,
             nickname: document.querySelector('#form-user-nickName').value,
         });
@@ -83,10 +81,12 @@ const handleCreateUserProfile = (e) => {
 };
 
 const showProfileTab = () => {
-    //document.querySelector('#ama-nav-tab').style.display = 'none';
     document.querySelector('#timeline-nav-tab').style.display = 'none';
     document.querySelector('#leaderboard-nav-tab').style.display = 'none';
     document.getElementById('profile-tab-label').click();
+    const staticHeaderImage = document.getElementById('static-header-image');
+    staticHeaderImage.setAttribute("src", "./images/login-header.jpg");
+    staticHeaderImage.style.height = "220px";
 };
 
 const showProfileTabIfFirstTimeVisiting = () => {

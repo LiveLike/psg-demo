@@ -121,7 +121,7 @@ span.mini-reaction-count {
   border-spacing: 0 1em;
 }
 
-.leaderboard-table > thead {
+.leaderboard-table>thead {
   font-family: "PSGFont";
   font-style: normal;
   font-weight: 500;
@@ -136,7 +136,7 @@ span.mini-reaction-count {
   flex-direction: column;
 }
 
-.profile-container > button {
+.profile-container>button {
   font-size: 12px;
   display: flex;
   flex-direction: row;
@@ -314,7 +314,7 @@ td.pts {
   margin-bottom: 0px;
 }
 
-#player > img {
+#player>img {
   background-color: #c0c0c0;
   width: 100% !important;
   height: 120px;
@@ -330,4 +330,9 @@ td.pts {
 
 .tab-content {
   padding-top: 250px;
+}
+
+#profile {
+  padding-top: 82px;
+  background-color: #183561;
 }

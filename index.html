@@ -23,8 +23,8 @@
 
     <div class="static-content-top">
 
-      <div style="display: none;" id="player">
-        <img src="./images/small-header.jpg" alt="">
+      <div id="player">
+        <img id="static-header-image" src="./images/small-header.jpg" alt="">
       </div>
 
       <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -69,14 +69,9 @@
 
       <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <div style="display: flex; flex-direction: column;">
-          <img  src="./images/login-header.jpg" />
           <div class="profile-container">
             <form autocomplete="off">
-              <label class="form-label" for="form-user-fullName">Full Name<b class="red-text">*</b></label>
-              <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="text"
-                id="form-user-fullName" class="profile-input form-control" />
-              <br />
-              <label class="form-label" for="form-user-nickName">Username<b class="red-text">*</b></label>
+              <label class="form-label" for="form-user-nickName">TEAM NAME<b class="red-text">*</b></label>
               <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="text"
                 id="form-user-nickName" class="profile-input form-control" />
               <br />

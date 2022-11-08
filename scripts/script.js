@@ -116,7 +116,6 @@ const setupLeaderboard = (leaderboardId) => {
         }
         if (entry.rank <= 3) {
           entryRow.classList.add("active-bage");
-          console.log(entryRow.classList);
         }
         entryRow.innerHTML = `
 <td class="rank">${entry.rank}</td>
