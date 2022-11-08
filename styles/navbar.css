@@ -118,7 +118,7 @@ body {
 
 .tab-content {
   padding-top: 0;
-  max-height: calc(100% - 240px);
+  max-height: calc(100% - 168px);
   overflow-y: auto;
   /* height: calc(100% - 250px); */
   /* min-height: calc(100% - 250px); */

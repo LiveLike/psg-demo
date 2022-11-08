@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #1E2B4A;
+  background-color: #0C1324;
   font-family: "PSGFont";
 }
 
@@ -300,6 +300,7 @@ td.pts {
 #player>img {
   background-color: #c0c0c0;
   width: 100% !important;
+  height: 120px;
 }
 
 .static-content-top {
@@ -307,6 +308,7 @@ td.pts {
   position: fixed;
   top: 0;
   z-index: 100;
+  height: 168px;
 }
 
 .tab-content{
