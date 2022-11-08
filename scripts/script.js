@@ -1,52 +1,55 @@
 
 
-document.addEventListener("DOMContentLoaded", function(){
-    var tabList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tab"]'));
-    tabList.forEach(function(tab){
-        tab.addEventListener("shown.bs.tab", function(e){
-            e.target.getElementsByClassName('dot')[0].classList.add('hidden')
-          });
+document.addEventListener("DOMContentLoaded", function () {
+  var tabList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tab"]'));
+  tabList.forEach(function (tab) {
+    tab.addEventListener("shown.bs.tab", function (e) {
+      const dot = e.target.getElementsByClassName('dot')[0];
+      if(dot){
+        dot.classList.add('hidden');
+      }
     });
+  });
 });
 
 const init = (clientId, programId, leaderboardId) => {
-    LiveLike.init({
-        clientId: clientId,
-      }).then(() => {
-        setupLeaderboard(leaderboardId);
-        showProfileTabIfFirstTimeVisiting();
-        refreshProfileData()
-        addAMAWidgetFilter()
-        const widgetsContainer = document.querySelector('livelike-widgets');
-        widgetsContainer.programid = programId;
-        //const chatContainer = document.querySelector('livelike-chat');
-        //chatContainer.roomId = roomId;
-        addListenersForDot(programId)
-      });
+  LiveLike.init({
+    clientId: clientId,
+  }).then(() => {
+    setupLeaderboard(leaderboardId);
+    showProfileTabIfFirstTimeVisiting();
+    refreshProfileData()
+    addAMAWidgetFilter()
+    const widgetsContainer = document.querySelector('livelike-widgets');
+    widgetsContainer.programid = programId;
+    //const chatContainer = document.querySelector('livelike-chat');
+    //chatContainer.roomId = roomId;
+    addListenersForDot(programId)
+  });
 };
 
 function addAMAWidgetFilter() {
-    //For filtering old widgets (received from timeline resource)
-    const widgets = document.querySelector('livelike-widgets');
-    let filterAlertWidgets = ({widgets}) => widgets.filter(widget => widget.kind !== 'text-ask');
-    widgets && (widgets.onInitialWidgetsLoaded = filterAlertWidgets);
-    widgets && (widgets.onMoreWidgetsLoaded = filterAlertWidgets);
+  //For filtering old widgets (received from timeline resource)
+  const widgets = document.querySelector('livelike-widgets');
+  let filterAlertWidgets = ({ widgets }) => widgets.filter(widget => widget.kind !== 'text-ask');
+  widgets && (widgets.onInitialWidgetsLoaded = filterAlertWidgets);
+  widgets && (widgets.onMoreWidgetsLoaded = filterAlertWidgets);
 
-    //For filtering new widgets (received from CMS via pubnub)
-    let filterNewAlertWidgets = (widgetPayload) => widgetPayload.kind !== 'text-ask' && widgetPayload;
-    widgets && (widgets.onWidgetReceived = filterNewAlertWidgets);
+  //For filtering new widgets (received from CMS via pubnub)
+  let filterNewAlertWidgets = (widgetPayload) => widgetPayload.kind !== 'text-ask' && widgetPayload;
+  widgets && (widgets.onWidgetReceived = filterNewAlertWidgets);
 };
 
 function addListenersForDot(programId) {
   LiveLike.addWidgetListener(
-    {programId: programId}, 
+    { programId: programId },
     (e) => {
-       //New Message
-       //Check if active tab is not chat then remove hidden from dot class
-       let activTab = document.getElementsByClassName("nav-link active")['widget-tab']
-       if(activTab === undefined) {
-         document.querySelector('#widget-tab > img').classList.remove('hidden')
-       }
+      //New Message
+      //Check if active tab is not chat then remove hidden from dot class
+      let activTab = document.getElementsByClassName("nav-link active")['widget-tab']
+      if (activTab === undefined) {
+        document.querySelector('#widget-tab > img').classList.remove('hidden')
+      }
     }
   );
 
@@ -111,7 +114,10 @@ const setupLeaderboard = (leaderboardId) => {
           entry.profile_nickname = 'Me';
           entryRow.setAttribute('class', 'list-item current-profile-list-item');
         }
-      
+        if (entry.rank <= 3) {
+          entryRow.classList.add("active-bage");
+          console.log(entryRow.classList);
+        }
         entryRow.innerHTML = `
 <td class="rank">${entry.rank}</td>
 <td class="name">${entry.profile_nickname}</td>
@@ -133,12 +139,12 @@ const setupLeaderboard = (leaderboardId) => {
     evts.forEach(evt => document.addEventListener(evt, updateLeaderboardData));
 
     document.addEventListener('rankchange', (data) => {
-        updateLeaderboardData();
-        if (data.detail.rewards.length) {
-          //const ptsEl = document.querySelector('#user-profile-points');
-          //ptsEl.classList.add('bounce');
-          //setTimeout(() => ptsEl.classList.remove('bounce'), 1200);
-        }
+      updateLeaderboardData();
+      if (data.detail.rewards.length) {
+        //const ptsEl = document.querySelector('#user-profile-points');
+        //ptsEl.classList.add('bounce');
+        //setTimeout(() => ptsEl.classList.remove('bounce'), 1200);
+      }
     });
   }
   updateLeaderboardData();

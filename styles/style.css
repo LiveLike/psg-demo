@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #0C1324;
+  background-color: #0c1324;
   font-family: "PSGFont";
 }
 
@@ -124,7 +124,8 @@ span.mini-reaction-count {
 .leaderboard-table > thead {
   font-family: "PSGFont";
   font-style: normal;
-  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .profile-container {
@@ -214,6 +215,14 @@ livelike-percentage {
 
 tr.list-item {
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180%;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .send-icon svg {
@@ -267,9 +276,20 @@ td.name {
   font-style: normal;
   line-height: 14px;
   color: #ffffff;
+  margin-left: 25%;
+}
+
+.active-bage {
+  background-image: url("../images/bage.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  align-items: center;
 }
 
 td.rank {
+  display: flex;
+  margin-left: 3.5px;
+  margin-top: 2px;
   font-family: "PSGFont";
   font-style: normal;
   line-height: 11px;
