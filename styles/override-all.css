@@ -55,3 +55,16 @@ livelike-progress {
   font-weight: normal;
   line-height: 14px;
 }
+
+.thead-element {
+  font-family: "PSGFont";
+  font-style: normal;
+  font-weight: 100 !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.score-label {
+  font-family: "PSGFont";
+  font-style: normal;
+  font-weight: 100 !important;
+}

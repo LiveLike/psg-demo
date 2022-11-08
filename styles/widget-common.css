@@ -13,9 +13,10 @@ livelike-title {
   color: #ffffff;
   background-color: #1a2434;
   padding: 2px 14px;
-  font-size: 21px;
+  font-weight: 500;
+  font-size: 24px;
   font-family: "PSGFont";
-  line-height: 21px;
+  line-height: 25px;
 }
 
 livelike-image {
@@ -46,6 +47,9 @@ livelike-widget-root {
 
 livelike-description {
   color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
   /* margin-top:12px */
 }
 

@@ -62,7 +62,6 @@ livelike-widget-root livelike-widget-header {
   background: #21272e;
   text-align: start;
   margin-bottom: 15px;
-  /* font-weight: 700; */
   line-height: 29px;
   font-size: 24px;
 }
@@ -124,7 +123,7 @@ span.mini-reaction-count {
 .leaderboard-table>thead {
   font-family: "PSGFont";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500 !important;
   color: rgba(255, 255, 255, 0.4) !important;
 }
 
@@ -166,10 +165,9 @@ span.mini-reaction-count {
   font-family: "PSGFont";
   font-style: normal;
   font-weight: 500 !important;
-  font-size: 11px;
-  line-height: 17px;
+  font-size: 14px;
+  line-height: 14px;
   color: #ffffff;
-  opacity: 0.64;
   text-transform: uppercase;
 }
 
@@ -177,7 +175,6 @@ span.mini-reaction-count {
   text-align: center;
   font-family: "PSGFont";
   font-style: normal;
-  /* font-weight: 700; */
   font-size: 14px;
   line-height: 21px;
 }
@@ -185,16 +182,20 @@ span.mini-reaction-count {
 .create-profile-text {
   font-family: "PSGFont";
   font-style: normal;
-  /* font-weight: 700; */
   font-size: 14px;
   line-height: 169%;
   text-align: center;
   color: #cf2e25;
 }
+.btn-default{
+  width: 80% !important;
+}
 
 .form-control {
   background: #ffffff !important;
-  background-color: #111720 !important;
+  background-color: #2F4971 !important;
+  font-size: 16px;
+  line-height: 16px;
   border-radius: 0 !important;
 }
 
@@ -232,7 +233,6 @@ tr.list-item {
 .small-text {
   font-family: "PSGFont";
   font-style: normal;
-  /* font-weight: 400; */
   font-size: 11px;
   line-height: 18px;
   color: #ffffff;
@@ -244,7 +244,6 @@ tr.list-item {
 .mandatory-text {
   font-family: "PSGFont";
   font-style: normal;
-  /* font-weight: 400; */
   font-size: 11px;
   line-height: 18px;
   color: gray;
@@ -264,7 +263,6 @@ tr.list-item {
   color: white;
   font-family: "PSGFont";
   font-style: normal;
-  /* font-weight: 700; */
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
@@ -274,7 +272,8 @@ tr.list-item {
 td.name {
   font-family: "PSGFont";
   font-style: normal;
-  line-height: 14px;
+  font-size: 18px;
+  line-height: 18px;
   color: #ffffff;
   margin-left: 25%;
 }
@@ -306,7 +305,6 @@ td.pts {
 .user-profile-points {
   font-family: "PSGFont";
   font-style: normal;
-  /* font-weight: 700; */
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;

@@ -31,7 +31,6 @@
   background-color: #183561 !important;
   color: white;
   font-size: 12px;
-  /* font-weight: 700; */
   font-family: "PSGFont";
   font-style: normal;
 }
@@ -58,7 +57,6 @@
   border-radius: 0;
   font-family: "PSGFont";
   font-style: normal;
-  /* font-weight: 600; */
   font-size: 16px;
   color: #5a5a64;
   line-height: 1.6;
@@ -70,7 +68,6 @@
   border-bottom: 2px solid #f26a16;
   font-family: "PSGFont";
   font-style: normal;
-  /* font-weight: 600; */
   font-size: 16px;
   line-height: 1.6;
 }

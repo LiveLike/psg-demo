@@ -118,9 +118,9 @@ const setupLeaderboard = (leaderboardId) => {
           entryRow.classList.add("active-bage");
         }
         entryRow.innerHTML = `
-<td class="rank">${entry.rank}</td>
-<td class="name">${entry.profile_nickname}</td>
-<td class="pts">${entry.score}</td>
+<td class="score-label rank">${entry.rank}</td>
+<td class="score-label name">${entry.profile_nickname}</td>
+<td class="score-label pts">${entry.score}</td>
           `;
         lbContainer.appendChild(entryRow);
       });
