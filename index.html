@@ -24,7 +24,7 @@
     <div class="static-content-top">
 
       <div style="display: none;" id="player">
-        <img src="./images/psg-player.png" alt="">
+        <img src="./images/small-header.jpg" alt="">
       </div>
 
       <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -58,9 +58,9 @@
         <div class="leaderboard-container">
           <table class="leaderboard-table">
             <thead>
-              <th><b>#</b></th>
-              <th><b>USERNAME</b></th>
-              <th><b>Score</b></th>
+              <th>#</th>
+              <th>USERNAME</th>
+              <th>Score</th>
             </thead>
             <tbody class="leaderboard-entries-container"> </tbody>
           </table>
@@ -69,18 +69,18 @@
 
       <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <div style="display: flex; flex-direction: column;">
-          <img style="align-self: center;" src="./images/psg-logo.svg" />
+          <img  src="./images/login-header.jpg" />
           <div class="profile-container">
             <form autocomplete="off">
-              <label class="form-label" for="form-user-fullName"><b>Full Name</b><b class="red-text">*</b></label>
+              <label class="form-label" for="form-user-fullName">Full Name<b class="red-text">*</b></label>
               <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="text"
                 id="form-user-fullName" class="profile-input form-control" />
               <br />
-              <label class="form-label" for="form-user-nickName"><b>Username</b><b class="red-text">*</b></label>
+              <label class="form-label" for="form-user-nickName">Username<b class="red-text">*</b></label>
               <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="text"
                 id="form-user-nickName" class="profile-input form-control" />
               <br />
-              <label class="form-label" for="form-user-email"><b>Email</b><b class="red-text">*</b></label>
+              <label class="form-label" for="form-user-email">Email<b class="red-text">*</b></label>
               <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="email"
                 id="form-user-email" class="profile-input form-control" />
             </form>

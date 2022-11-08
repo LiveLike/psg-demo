@@ -45,22 +45,21 @@ h1 {
 .widgets-timeline {
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 livelike-image-number-prediction-follow-up {
   margin: 10px;
   font-family: "PSGFont" !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 livelike-widget-root {
-  
   padding-bottom: 5px !important;
 }
 
 livelike-widget-root livelike-widget-header {
-  background: #21272E;
+  background: #21272e;
   text-align: start;
   margin-bottom: 15px;
   /* font-weight: 700; */
@@ -69,17 +68,17 @@ livelike-widget-root livelike-widget-header {
 }
 
 livelike-widget-root livelike-widget-body {
-  background-color: #21272E;
+  background-color: #21272e;
 }
 
 livelike-text-ask {
   margin: 10px;
   font-family: "PSGFont" !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .avatar {
-  margin: 0px 6px 0px 0px
+  margin: 0px 6px 0px 0px;
 }
 
 .avatar img,
@@ -114,18 +113,18 @@ span.mini-reaction-count {
   margin-left: 3px;
 }
 
-
 .leaderboard-table {
   text-align: left;
   table-layout: auto;
   width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1em;
 }
 
-.leaderboard-table>thead {
-  font-family: 'PSGFont';
+.leaderboard-table > thead {
+  font-family: "PSGFont";
   font-style: normal;
-  line-height: 11px;
-  color: #CF2E25;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .profile-container {
@@ -136,7 +135,7 @@ span.mini-reaction-count {
   flex-direction: column;
 }
 
-.profile-container>button {
+.profile-container > button {
   font-size: 12px;
   display: flex;
   flex-direction: row;
@@ -146,7 +145,7 @@ span.mini-reaction-count {
   padding: 9px 14px;
   width: 144px;
   height: 41px;
-  background-color: #CF2E25;
+  background-color: #cf2e25;
   color: white;
 }
 
@@ -162,22 +161,20 @@ span.mini-reaction-count {
   color: white;
 } */
 
-
-
 .form-label {
-  font-family: 'PSGFont';
+  font-family: "PSGFont";
   font-style: normal;
-  /* font-weight: 700; */
+  font-weight: 500 !important;
   font-size: 11px;
   line-height: 17px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.64;
   text-transform: uppercase;
 }
 
 .welcome-text {
   text-align: center;
-  font-family: 'PSGFont';
+  font-family: "PSGFont";
   font-style: normal;
   /* font-weight: 700; */
   font-size: 14px;
@@ -185,24 +182,25 @@ span.mini-reaction-count {
 }
 
 .create-profile-text {
-  font-family: 'PSGFont';
+  font-family: "PSGFont";
   font-style: normal;
   /* font-weight: 700; */
   font-size: 14px;
   line-height: 169%;
   text-align: center;
-  color: #CF2E25;
+  color: #cf2e25;
 }
 
 .form-control {
-  color: white !important;
+  background: #ffffff !important;
   background-color: #111720 !important;
+  border-radius: 0 !important;
 }
 
 .profile-input {
-  border: 1px solid white !important;
+  border: 1px solid #183f6c !important;
   color: white !important;
-  background-color: #111720;
+  background-color: #183f6c;
 }
 
 livelike-image-number-prediction livelike-option[image] {
@@ -212,7 +210,6 @@ livelike-image-number-prediction livelike-option[image] {
 livelike-progress,
 livelike-percentage {
   visibility: visible !important;
-  
 }
 
 tr.list-item {
@@ -220,7 +217,7 @@ tr.list-item {
 }
 
 .send-icon svg {
-  fill: #FFFFFF !important
+  fill: #ffffff !important;
 }
 
 .small-text {
@@ -229,7 +226,7 @@ tr.list-item {
   /* font-weight: 400; */
   font-size: 11px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.4;
   margin-top: 4px;
   text-align: center;
@@ -247,7 +244,7 @@ tr.list-item {
 }
 
 .reward-text-container {
-  background: #3F454C;
+  background: #3f454c;
   margin: 10px;
   height: 36px;
   display: flex;
@@ -261,43 +258,43 @@ tr.list-item {
   /* font-weight: 700; */
   font-size: 14px;
   line-height: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 12px;
 }
 
 td.name {
-  font-family: 'PSGFont';
+  font-family: "PSGFont";
   font-style: normal;
   line-height: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 td.rank {
   font-family: "PSGFont";
   font-style: normal;
   line-height: 11px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 td.pts {
-  font-family: 'PSGFont';
+  font-family: "PSGFont";
   font-style: normal;
   line-height: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .user-profile-points {
-  font-family: 'PSGFont';
+  font-family: "PSGFont";
   font-style: normal;
   /* font-weight: 700; */
   font-size: 14px;
   line-height: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   align-self: center;
-  margin-bottom: 0px
+  margin-bottom: 0px;
 }
 
-#player>img {
+#player > img {
   background-color: #c0c0c0;
   width: 100% !important;
   height: 120px;
@@ -311,6 +308,6 @@ td.pts {
   height: 168px;
 }
 
-.tab-content{
+.tab-content {
   padding-top: 250px;
 }
