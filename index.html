@@ -40,7 +40,7 @@
 
         <li class="nav-item" id="leaderboard-nav-tab" role="presentation">
           <button class="nav-link" id="leaderboard-tab" data-bs-toggle="tab" data-bs-target="#leaderboard" type="button"
-            role="tab" aria-controls="leaderboard" aria-selected="false"><span>LEADERBOARD</span></button>
+            role="tab" aria-controls="leaderboard" aria-selected="false"><span>Classement</span></button>
         </li>
 
       </ul>
@@ -59,7 +59,7 @@
           <table class="leaderboard-table">
             <thead>
               <th class="thead-element">#</th>
-              <th class="thead-element">USERNAME</th>
+              <th class="thead-element">EQUIPE</th>
               <th class="thead-element">Score</th>
             </thead>
             <tbody class="leaderboard-entries-container"></tbody>
@@ -71,7 +71,7 @@
         <div style="display: flex; flex-direction: column;">
           <div class="profile-container">
             <form autocomplete="off">
-              <label class="form-label" for="form-user-nickName">TEAM NAME<b class="red-text">*</b></label>
+              <label class="form-label" for="form-user-nickName">Nom d’équipe<b class="red-text">*</b></label>
               <input onchange="performUserFormValidation()" onkeydown="performUserFormValidation()" type="text"
                 id="form-user-nickName" class="profile-input form-control" />
             </form>
