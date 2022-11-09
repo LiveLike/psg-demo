@@ -5,9 +5,7 @@ const profileIsValid = () => {
     }
 
     const nickname = document.querySelector('#form-user-nickName').value;
-    const email = document.querySelector('#form-user-email').value;
-
-    if (email && nickname) {
+    if (nickname) {
         return true;
     }
 
@@ -35,14 +33,12 @@ const showAllTabs = () => {
     
 };
 
-const updateUserProfile = ({ email, nickname }) => {
+const updateUserProfile = ({ nickname }) => {
     LiveLike.updateUserProfile({
         accessToken: LiveLike.userProfile.access_token,
         options: {
             nickname: nickname,
-            custom_data: JSON.stringify({
-                email: email,
-            }),
+            //custom_data: JSON.stringify({}),
         },
     })
         .then((res) => {
@@ -64,9 +60,6 @@ const refreshProfileData = () => {
         if (customData.fullName) {
             document.querySelector('#form-user-fullName').value = customData.fullName;
         }
-        if (customData.email) {
-            document.querySelector('#form-user-email').value = customData.email;
-        }
     }
     performUserFormValidation();
 };
@@ -74,7 +67,6 @@ const refreshProfileData = () => {
 const handleCreateUserProfile = (e) => {
     if (profileIsValid()) {
         updateUserProfile({
-            email: document.querySelector('#form-user-email').value,
             nickname: document.querySelector('#form-user-nickName').value,
         });
     }
