@@ -159,7 +159,7 @@ livelike-percentage[correct] {
 }
 
 livelike-option[selected] {
-  border-color: #cf2e25;
+  border-color: #ffffff;
   background-color: #252f3e !important;
 }
 
@@ -174,7 +174,7 @@ livelike-description[correct] {
 }
 
 livelike-option[selected][incorrect] {
-  border-color: #ffffff;
+  border-color: #cf2e25;
   background-color: #252f3e !important;
 }
 

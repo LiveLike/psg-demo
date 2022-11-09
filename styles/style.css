@@ -116,11 +116,11 @@ span.mini-reaction-count {
   text-align: left;
   table-layout: auto;
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 1em;
+  /* border-collapse: collapse; */
+  /* border-spacing: 10px; */
 }
 
-.leaderboard-table>thead {
+.leaderboard-table > thead {
   font-family: "PSGFont";
   font-style: normal;
   font-weight: 500 !important;
@@ -135,7 +135,7 @@ span.mini-reaction-count {
   flex-direction: column;
 }
 
-.profile-container>button {
+.profile-container > button {
   font-size: 12px;
   display: flex;
   flex-direction: row;
@@ -187,13 +187,13 @@ span.mini-reaction-count {
   text-align: center;
   color: #cf2e25;
 }
-.btn-default{
+.btn-default {
   width: 80% !important;
 }
 
 .form-control {
   background: #ffffff !important;
-  background-color: #2F4971 !important;
+  background-color: #2f4971 !important;
   font-size: 16px;
   line-height: 16px;
   border-radius: 0 !important;
@@ -213,16 +213,13 @@ livelike-progress,
 livelike-percentage {
   visibility: visible !important;
 }
+.leaderboard-entries-container {
+  width: 100%;
+  text-align: left;
+}
 
 tr.list-item {
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 180%;
-  padding: 5px;
-  margin: auto;
-  margin-bottom: 5px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -275,27 +272,30 @@ td.name {
   font-size: 18px;
   line-height: 18px;
   color: #ffffff;
-  margin-left: 25%;
 }
 
 .active-bage {
+  align-items: center;
   background-image: url("../images/bage.svg");
   background-repeat: no-repeat;
   background-size: auto;
-  align-items: center;
+  background-position: center left;
+  background-position-x: 10px;
+  /* background-position-y: 10px; */
+  /* background-position: left top;
+  background-size: auto;
+  align-items: center; */
 }
 
 td.rank {
-  display: flex;
-  margin-left: 3.5px;
-  margin-top: 2px;
+  text-align: center;
   font-family: "PSGFont";
   font-style: normal;
-  line-height: 11px;
   color: #ffffff;
 }
 
 td.pts {
+  text-align: end;
   font-family: "PSGFont";
   font-style: normal;
   line-height: 14px;
@@ -312,7 +312,7 @@ td.pts {
   margin-bottom: 0px;
 }
 
-#player>img {
+#player > img {
   background-color: #c0c0c0;
   width: 100% !important;
   height: 120px;
