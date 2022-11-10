@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   tabList.forEach(function (tab) {
     tab.addEventListener("shown.bs.tab", function (e) {
       const dot = e.target.getElementsByClassName('dot')[0];
-      if(dot){
+      if (dot) {
         dot.classList.add('hidden');
       }
     });
@@ -126,14 +126,20 @@ const setupLeaderboard = (leaderboardId) => {
           entry.profile_nickname = entry.profile_nickname + '(moi)';
           entryRow.setAttribute('class', 'list-item current-profile-list-item');
         }
+
         if (entry.rank <= 3) {
-          entryRow.classList.add("active-bage");
-        }
-        entryRow.innerHTML = `
+          entryRow.innerHTML = `
+          <td class="score-label rank active-bage">${entry.rank}</td>
+          <td class="score-label name">${entry.profile_nickname}</td>
+          <td class="score-label pts">${entry.score}</td>`;
+
+        } else {
+          entryRow.innerHTML = `
 <td class="score-label rank">${entry.rank}</td>
 <td class="score-label name">${entry.profile_nickname}</td>
-<td class="score-label pts">${entry.score}</td>
-          `;
+<td class="score-label pts">${entry.score}</td>`;
+        }
+
         lbContainer.appendChild(entryRow);
       });
     });
