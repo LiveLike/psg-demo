@@ -33,11 +33,6 @@ h1 {
   max-height: 30vh !important;
 }
 
-.widgets-timeline {
-  height: 90vh;
-  overflow-y: scroll;
-}
-
 .livelike-load-more-button {
   margin-top: 10px;
 }
@@ -45,7 +40,6 @@ h1 {
 .widgets-timeline {
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px;
 }
 
 livelike-image-number-prediction-follow-up {
