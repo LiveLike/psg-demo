@@ -77,3 +77,8 @@ livelike-option livelike-progress:not([changed]) {
 livelike-option livelike-percentage:not([changed]) {
   visibility: hidden !important;
 }
+
+livelike-widgets {
+  display: flex;
+  flex-direction: column-reverse;
+}
