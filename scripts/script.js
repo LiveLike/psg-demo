@@ -14,8 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const init = (clientId, programId, leaderboardId) => {
   LiveLike.init({
-    clientId: clientId,
+    clientId: clientId
   }).then(() => {
+
+    LiveLike.applyLocalization({
+      en: {
+        "widget.quiz.voteButton.label": "Valider",
+        "widget.quiz.votedText": "Fait!"
+      },
+      fr: {
+        "widget.quiz.voteButton.label": "Valider",
+        "widget.quiz.votedText": "Fait!"
+      }
+    })
+
     setupLeaderboard(leaderboardId);
     showProfileTabIfFirstTimeVisiting();
     refreshProfileData()
