@@ -123,7 +123,7 @@ const setupLeaderboard = (leaderboardId) => {
         const entryRow = document.createElement('tr');
         entryRow.setAttribute('class', 'list-item');
         if (entry.profile_id === LiveLike.userProfile.id) {
-          entry.profile_nickname = 'Me';
+          entry.profile_nickname = entry.profile_nickname + '(moi)';
           entryRow.setAttribute('class', 'list-item current-profile-list-item');
         }
         if (entry.rank <= 3) {
