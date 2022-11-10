@@ -272,6 +272,8 @@ td.name {
   font-size: 18px;
   line-height: 18px;
   color: #ffffff;
+  background: none !important;
+  background-image: none !important;
 }
 
 .active-bage {
@@ -292,6 +294,8 @@ td.rank {
   font-family: "PSGFont";
   font-style: normal;
   color: #ffffff;
+  background: none !important;
+  background-image: none !important;
 }
 
 td.pts {
