@@ -65,7 +65,7 @@ livelike-widget-root livelike-widget-body {
 }
 
 livelike-text-ask {
-  margin: 10px;
+  /* margin: 10px; */
   font-family: "PSGFont" !important;
   color: #ffffff;
 }
