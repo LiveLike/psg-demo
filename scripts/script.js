@@ -58,7 +58,7 @@ const handleResultAnimation = e => {
   if (answer.is_correct) {
     rewardText = `${answer.rewards[0].reward_item_amount} ${answer.rewards[0].reward_item_name} earned`
   }
-  const rewardElement = `<span class="confirmation-message"> ${rewardText}</span>`;
+  const rewardElement = `<span class="confirmation-message quiz-confirmation-message"> ${rewardText}</span>`;
 
   e.target.lastChild.lastChild.children[1].insertAdjacentHTML('beforeend', rewardElement);
 

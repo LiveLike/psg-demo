@@ -92,3 +92,8 @@ livelike-widgets {
   background-color: #CF2E25 !important;
   border-radius: 0px !important;
 }
+
+.quiz-confirmation-message{
+  font-size: 16px !important;
+  font-weight: 100 !important;
+}
