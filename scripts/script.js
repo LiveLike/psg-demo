@@ -26,11 +26,15 @@ const init = (clientId, programId, leaderboardId) => {
     LiveLike.applyLocalization({
       en: {
         "widget.quiz.voteButton.label": "Valider",
-        "widget.quiz.votedText": "Fait!"
+        "widget.quiz.votedText": "Fait!",
+        'widget.textAsk.placeholder': '(translate)Type something in french...',
+        'widget.textAsk.sendButton.label': '(translate)SEND',
       },
       fr: {
         "widget.quiz.voteButton.label": "Valider",
-        "widget.quiz.votedText": "Fait!"
+        "widget.quiz.votedText": "Fait!",
+        'widget.textAsk.placeholder': '(translate)Type something',
+    'widget.textAsk.sendButton.label': '(translate)SEND',
       }
     })
 
