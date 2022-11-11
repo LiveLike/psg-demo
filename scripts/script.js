@@ -48,17 +48,35 @@ const init = (clientId, programId, leaderboardId) => {
 };
 
 const addEventListenerForQuizWidgetAnswers = () => {
-  widget.addEventListener('answer', (e) => {
-    console.log(e);
-    console.log(e.detail.widget.id);
-    console.log(e.detail.answer.is_correct);
-    if (e.detail.answer.is_correct) {
-      console.log(e.detail.answer.rewards[0].reward_item_name);
-      console.log(e.detail.answer.rewards[0].reward_item_amount);
-    } else {
-      console.log("incorrect");
-    }
-  });
+  widget.addEventListener('answer', handleResultAnimation);
+};
+
+const handleResultAnimation = e => {
+  const { result, element, widget, answer } = e.detail;
+  const animationEl = element.querySelector('.animation-container');
+  if (result !== 'unattempted' && !animationEl) {
+    let imgUrl = answer.is_correct ? './images/correct.gif' : './images/incorrect.gif';
+
+    const elStr = `
+      <div class="animation-container" style="position: absolute; z-index: 10; left: 50%; width: 100%; top: 50%; transform: translate(-50%,-50%); z-index: 1000; width: 100%;">
+        <img class="animation-image" style="height: 100%; width: 100%;" src="${imgUrl}" alt="Result animation">
+      </div>
+    `;
+
+    const widgetEl = element.querySelector('livelike-widget-root');
+    widgetEl && widgetEl.insertAdjacentHTML(
+      'beforeend',
+      elStr
+    );
+    widgetEl && setTimeout(() => {
+      const animation = element.querySelector('.animation-image');
+      const gif = element.querySelector('.animation-container');
+      if (gif && animation) {
+        animation.src = "";
+        gif.removeChild(animation);
+      }
+    }, 2250);
+  }
 };
 
 
