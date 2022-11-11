@@ -8,7 +8,6 @@
 body {
   background-color: #0c1324;
   font-family: "PSGFont";
-  touch-action: pan-x pan-y;
 }
 
 h1 {
