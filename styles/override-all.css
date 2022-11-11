@@ -82,3 +82,7 @@ livelike-widgets {
   display: flex;
   flex-direction: column-reverse;
 }
+
+.widgets-tab{
+  padding-bottom: 100px;
+}
