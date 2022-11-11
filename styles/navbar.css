@@ -97,9 +97,11 @@
 }
 
 /* Scrolling changes*/
-
-body {
+html {
   height: 100vh;
+}
+body {
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -115,8 +117,13 @@ body {
 
 .tab-content {
   padding-top: 0;
-  max-height: calc(100% - 168px);
-  overflow-y: auto;
+  height: 100%;
   /* height: calc(100% - 250px); */
   /* min-height: calc(100% - 250px); */
+}
+/*  100% - static-content-top height */
+
+.widgets-tab {
+  height: calc(100% - 168px);
+  overflow-y: auto;
 }

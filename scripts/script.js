@@ -12,6 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function handleWidgetsScrolling(widgetsContainer){
+  const widgetsTabPane = document.querySelector('.widgets-tab.tab-pane')
+  const scrollUp = () => {
+    widgetsTabPane.scrollTop = 0;
+  }
+  widgetsContainer.addEventListener('widgetattached', scrollUp);
+}
+
 const init = (clientId, programId, leaderboardId) => {
   LiveLike.init({
     clientId: clientId
@@ -31,18 +39,18 @@ const init = (clientId, programId, leaderboardId) => {
     setupLeaderboard(leaderboardId);
     showProfileTabIfFirstTimeVisiting();
     refreshProfileData()
-    addAMAWidgetFilter()
     const widgetsContainer = document.querySelector('livelike-widgets');
     widgetsContainer.programid = programId;
+    addAMAWidgetFilter(widgetsContainer);
+    handleWidgetsScrolling(widgetsContainer);
     //const chatContainer = document.querySelector('livelike-chat');
     //chatContainer.roomId = roomId;
     addListenersForDot(programId)
   });
 };
 
-function addAMAWidgetFilter() {
+function addAMAWidgetFilter(widgets) {
   //For filtering old widgets (received from timeline resource)
-  const widgets = document.querySelector('livelike-widgets');
   let filterAlertWidgets = ({ widgets }) => widgets.filter(widget => widget.kind !== 'text-ask');
   widgets && (widgets.onInitialWidgetsLoaded = filterAlertWidgets);
   widgets && (widgets.onMoreWidgetsLoaded = filterAlertWidgets);
