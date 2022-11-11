@@ -273,6 +273,8 @@ livelike-option:not([image]) div:first-child livelike-percentage {
 
 .leaderboard-container {
   padding: 12px;
+  height: calc(100% - 168px);
+  overflow-y: auto;
 }
 
 .widget-link {
