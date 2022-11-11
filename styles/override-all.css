@@ -86,3 +86,9 @@ livelike-widgets {
 .widgets-tab{
   padding-bottom: 100px;
 }
+
+.text-ask-button{
+  color: white !important;
+  background-color: #CF2E25 !important;
+  border-radius: 0px !important;
+}

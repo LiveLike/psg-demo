@@ -39,7 +39,7 @@ const init = (clientId, programId, leaderboardId) => {
     refreshProfileData()
     const widgetsContainer = document.querySelector('livelike-widgets');
     widgetsContainer.programid = programId;
-    addAMAWidgetFilter(widgetsContainer);
+    //addAMAWidgetFilter(widgetsContainer);
     handleWidgetsScrolling(widgetsContainer);
     //const chatContainer = document.querySelector('livelike-chat');
     //chatContainer.roomId = roomId;
