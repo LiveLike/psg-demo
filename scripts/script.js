@@ -53,12 +53,21 @@ const addEventListenerForQuizWidgetAnswers = () => {
 
 const handleResultAnimation = e => {
   const { result, element, widget, answer } = e.detail;
+  console.log(e.target.lastChild.lastChild.children[1]);
+  let rewardText = "";
+  if (answer.is_correct) {
+    rewardText = `${answer.rewards[0].reward_item_amount} ${answer.rewards[0].reward_item_name} earned`
+  }
+  const rewardElement = `<span class="confirmation-message"> ${rewardText}</span>`;
+
+  e.target.lastChild.lastChild.children[1].insertAdjacentHTML('beforeend', rewardElement);
+
   const animationEl = element.querySelector('.animation-container');
   if (result !== 'unattempted' && !animationEl) {
     let imgUrl = answer.is_correct ? './images/correct.gif' : './images/incorrect.gif';
 
-    const elStr = 
-`<div class="animation-container" style="position: absolute; z-index: 10; left: 50%; width: 100%; top: 50%; transform: translate(-50%,-50%); z-index: 1000; width: 100%;">
+    const elStr =
+      `<div class="animation-container" style="position: absolute; z-index: 10; left: 50%; width: 100%; top: 50%; transform: translate(-50%,-50%); z-index: 1000; width: 100%;">
         <img class="animation-image" style="height: 100%; width: 100%;" src="${imgUrl}" alt="Result animation">
 </div>`;
 
@@ -76,6 +85,7 @@ const handleResultAnimation = e => {
       }
     }, 2250);
   }
+
 };
 
 
