@@ -27,14 +27,14 @@ const init = (clientId, programId, leaderboardId) => {
       en: {
         "widget.quiz.voteButton.label": "Valider",
         "widget.quiz.votedText": "Fait!",
-        'widget.textAsk.placeholder': '(translate)Type something in french...',
-        'widget.textAsk.sendButton.label': '(translate)SEND',
+        'widget.textAsk.placeholder': 'Écrivez ici...',
+        'widget.textAsk.sendButton.label': 'ENVOYER',
       },
       fr: {
         "widget.quiz.voteButton.label": "Valider",
         "widget.quiz.votedText": "Fait!",
-        'widget.textAsk.placeholder': '(translate)Type something',
-    'widget.textAsk.sendButton.label': '(translate)SEND',
+        'widget.textAsk.placeholder': 'Écrivez ici...',
+    'widget.textAsk.sendButton.label': 'ENVOYER',
       }
     })
 
@@ -60,7 +60,7 @@ const handleResultAnimation = e => {
   console.log(e.target.lastChild.lastChild.children[1]);
   let rewardText = "";
   if (answer.is_correct) {
-    rewardText = `${answer.rewards[0].reward_item_amount} ${answer.rewards[0].reward_item_name} earned`
+    rewardText = `${answer.rewards[0].reward_item_amount} ${answer.rewards[0].reward_item_name}!`
   }
   const rewardElement = `<span class="confirmation-message quiz-confirmation-message"> ${rewardText}</span>`;
 
