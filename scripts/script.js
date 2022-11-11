@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
   var tabList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tab"]'));
   tabList.forEach(function (tab) {
@@ -12,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function handleWidgetsScrolling(widgetsContainer){
+function handleWidgetsScrolling(widgetsContainer) {
   const widgetsTabPane = document.querySelector('.widgets-tab.tab-pane')
   const scrollUp = () => {
     widgetsTabPane.scrollTop = 0;
@@ -45,9 +43,24 @@ const init = (clientId, programId, leaderboardId) => {
     handleWidgetsScrolling(widgetsContainer);
     //const chatContainer = document.querySelector('livelike-chat');
     //chatContainer.roomId = roomId;
-    addListenersForDot(programId)
+    addEventListenerForQuizWidgetAnswers();
   });
 };
+
+const addEventListenerForQuizWidgetAnswers = () => {
+  widget.addEventListener('answer', (e) => {
+    console.log(e);
+    console.log(e.detail.widget.id);
+    console.log(e.detail.answer.is_correct);
+    if (e.detail.answer.is_correct) {
+      console.log(e.detail.answer.rewards[0].reward_item_name);
+      console.log(e.detail.answer.rewards[0].reward_item_amount);
+    } else {
+      console.log("incorrect");
+    }
+  });
+};
+
 
 function addAMAWidgetFilter(widgets) {
   //For filtering old widgets (received from timeline resource)
