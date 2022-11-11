@@ -8,6 +8,7 @@
 body {
   background-color: #0c1324;
   font-family: "PSGFont";
+  touch-action: pan-x pan-y;
 }
 
 h1 {
@@ -114,7 +115,7 @@ span.mini-reaction-count {
   /* border-spacing: 10px; */
 }
 
-.leaderboard-table > thead {
+.leaderboard-table>thead {
   font-family: "PSGFont";
   font-style: normal;
   font-weight: 500 !important;
@@ -129,7 +130,7 @@ span.mini-reaction-count {
   flex-direction: column;
 }
 
-.profile-container > button {
+.profile-container>button {
   font-size: 12px;
   display: flex;
   flex-direction: row;
@@ -181,6 +182,7 @@ span.mini-reaction-count {
   text-align: center;
   color: #cf2e25;
 }
+
 .btn-default {
   width: 80% !important;
 }
@@ -207,6 +209,7 @@ livelike-progress,
 livelike-percentage {
   visibility: visible !important;
 }
+
 .leaderboard-entries-container {
   width: 100%;
   text-align: left;
@@ -306,7 +309,7 @@ td.pts {
   margin-bottom: 0px;
 }
 
-#player > img {
+#player>img {
   background-color: #c0c0c0;
   width: 100% !important;
   height: 120px;
