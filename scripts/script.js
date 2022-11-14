@@ -12,8 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function handleWidgetsScrolling(widgetsContainer) {
   const widgetsTabPane = document.querySelector('.widgets-tab.tab-pane')
+  const handleClickLoadMoreButton = () => {
+    const loadMoreButton = document.querySelector(".livelike-load-more-button");
+    if (loadMoreButton) {
+      loadMoreButton.click();
+    }
+  };
   const scrollUp = () => {
     widgetsTabPane.scrollTop = 0;
+    handleClickLoadMoreButton();
   }
   widgetsContainer.addEventListener('widgetattached', scrollUp);
 }
@@ -34,7 +41,7 @@ const init = (clientId, programId, leaderboardId) => {
         "widget.quiz.voteButton.label": "Valider",
         "widget.quiz.votedText": "Fait!",
         'widget.textAsk.placeholder': 'Écrivez ici...',
-    'widget.textAsk.sendButton.label': 'ENVOYER',
+        'widget.textAsk.sendButton.label': 'ENVOYER',
       }
     })
 
