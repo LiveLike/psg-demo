@@ -83,17 +83,43 @@ livelike-widgets {
   flex-direction: column-reverse;
 }
 
-.widgets-tab{
+.widgets-tab {
   padding-bottom: 100px;
 }
 
-.text-ask-button{
+/* .text-ask-button {
+  font-family: "PSGFont" !important;
   color: white !important;
   background-color: #CF2E25 !important;
   border-radius: 0px !important;
+  line-height: 12px !important;
+  height: 14px;
+} */
+
+.text-ask-button {
+  background: #cf2e25 !important;
+  border: unset !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  padding: 3px 20px !important;
+  font-style: normal;
 }
 
-.quiz-confirmation-message{
+.text-ask-button [disabled] {
+  background: #7e7e7e !important;
+  border-radius: 0px !important;
+  border: unset !important;
+  color: #ffffff !important;
+}
+
+.text-ask-button-label{
+  font-weight: 100 !important;
+  font-family: "PSGFont";
+  font-size: 14px;
+}
+
+.quiz-confirmation-message {
   font-size: 16px !important;
   font-weight: 100 !important;
 }
